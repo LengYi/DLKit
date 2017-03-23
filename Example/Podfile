@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'DLKit_Example' do
+  pod 'DLKit', :path => '../'
+
+  target 'DLKit_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+  end
+end
