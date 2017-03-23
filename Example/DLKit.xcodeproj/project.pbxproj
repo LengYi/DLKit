@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		0CE890C1438AD4562A9DC7E9 /* Pods_DLKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1642409E52B791758F988972 /* DLKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DLKit.podspec; path = ../DLKit.podspec; sourceTree = "<group>"; };
-		281BD7B4B30515E7938C8B6B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1642409E52B791758F988972 /* DLKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DLKit.podspec; path = ../DLKit.podspec; sourceTree = "<group>"; };
+		281BD7B4B30515E7938C8B6B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		550A7018D9B3979C68F013E7 /* Pods-DLKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLKit_Example/Pods-DLKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		57729D19D699A6950B2D91E6 /* Pods-DLKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLKit_Example/Pods-DLKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5A38884C4475B472723E9E1D /* Pods_DLKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +66,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBABA03EDE44FF0ABF6C71C3 /* Pods-DLKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLKit_Tests/Pods-DLKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EBDB0FAC0DF03A2F4D816565 /* Pods-DLKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLKit_Tests/Pods-DLKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F8054749C2378C2CDD260BC9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F8054749C2378C2CDD260BC9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "707689817@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = AL3EKDF88S;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -524,11 +527,13 @@
 			baseConfigurationReference = 550A7018D9B3979C68F013E7 /* Pods-DLKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AL3EKDF88S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DLKit/DLKit-Prefix.pch";
 				INFOPLIST_FILE = "DLKit/DLKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test110;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -539,11 +544,13 @@
 			baseConfigurationReference = 57729D19D699A6950B2D91E6 /* Pods-DLKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AL3EKDF88S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DLKit/DLKit-Prefix.pch";
 				INFOPLIST_FILE = "DLKit/DLKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test110;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
