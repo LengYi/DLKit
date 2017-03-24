@@ -18,6 +18,11 @@
   "platforms": {
     "ios": "8.0"
   },
+  "frameworks": [
+    "UIKit",
+    "AdSupport",
+    "Foundation"
+  ],
   "subspecs": [
     {
       "name": "DLHttp",
