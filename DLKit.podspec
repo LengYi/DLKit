@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
   s.version          = '0.1.0'
-  s.summary          = '常用功能库封装'
+  s.summary          = 'Http请求,获取设备信息,获取App信息'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -30,8 +30,19 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'DLKit/Classes/**/*'
-  
+  #s.source_files = 'DLKit/Classes/**/*'
+  s.subspec 'DLHttp' do |http|
+      http.source_files = 'DLKit/Classes/Base/DLNet/Request/**/*'
+  end
+
+  s.subspec 'UIDevice+extended' do |dev|
+      dev.source_files = 'DLKit/Classes/Base/DLUIKitExtended/Device/**/*'
+  end
+
+  s.subspec 'DLAppInfo' do |info|
+    info.source_files = 'DLKit/Classes/Base/App/**/*'
+  end
+
   # s.resource_bundles = {
   #   'DLKit' => ['DLKit/Assets/*.png']
   # }

@@ -1,9 +1,9 @@
 {
   "name": "DLKit",
   "version": "0.1.0",
-  "summary": "A short description of DLKit.",
+  "summary": "Http请求,获取设备信息,获取App信息",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/707689817@qq.com/DLKit",
+  "homepage": "https://github.com/LengYi/DLKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -18,5 +18,18 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "DLKit/Classes/**/*"
+  "subspecs": [
+    {
+      "name": "DLHttp",
+      "source_files": "DLKit/Classes/Base/DLNet/Request/**/*"
+    },
+    {
+      "name": "UIDevice+extended",
+      "source_files": "DLKit/Classes/Base/DLUIKitExtended/Device/**/*"
+    },
+    {
+      "name": "DLAppInfo",
+      "source_files": "DLKit/Classes/Base/App/**/*"
+    }
+  ]
 }
