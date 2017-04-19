@@ -1,6 +1,6 @@
 {
   "name": "DLKit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "Http请求,获取设备信息,获取App信息",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/LengYi/DLKit",
@@ -12,8 +12,8 @@
     "707689817@qq.com": "707689817@qq.com"
   },
   "source": {
-    "git": "https://github.com/707689817@qq.com/DLKit.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/LengYi/DLKit.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -23,6 +23,11 @@
     "AdSupport",
     "Foundation"
   ],
+  "dependencies": {
+    "GTMBase64": [
+      "~> 1.0.0"
+    ]
+  },
   "subspecs": [
     {
       "name": "DLHttp",
@@ -35,6 +40,10 @@
     {
       "name": "DLAppInfo",
       "source_files": "DLKit/Classes/Base/App/**/*"
+    },
+    {
+      "name": "DLDESBase64",
+      "source_files": "DLKit/Classes/Base/Encrypt/DESBase64/**/*"
     }
   ]
 }

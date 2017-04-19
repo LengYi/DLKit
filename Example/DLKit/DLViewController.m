@@ -11,6 +11,7 @@
 #import "UIDevice+extended.h"
 #import "UIDevice+name.h"
 #import "DLAppInfo.h"
+#import "DLDESBase64.h"
 
 @interface DLViewController ()
 
@@ -76,6 +77,12 @@
                }];
     
     NSLog(@"platformType = %@,naem = %@,sysVer = %@",[UIDevice platformType],[UIDevice platformName],[UIDevice systemVersion ]);
+    
+    NSString *enStr = [DLDESBase64 encryptText:@"http://update.xingyuncap.com/req/?t=10000&token=Nx8jD95vSVy8ewB5p76R6g" key:@"NSString"];
+    NSString *desStr = [DLDESBase64 desText:enStr key:@"NSString"];
+    
+    NSLog(@"enStr = %@,desStr = %@",enStr,desStr);
+    
 }
 
 @end

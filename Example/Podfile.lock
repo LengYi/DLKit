@@ -1,11 +1,18 @@
 PODS:
-  - DLKit (0.1.0):
-    - DLKit/DLAppInfo (= 0.1.0)
-    - DLKit/DLHttp (= 0.1.0)
-    - DLKit/UIDevice+extended (= 0.1.0)
-  - DLKit/DLAppInfo (0.1.0)
-  - DLKit/DLHttp (0.1.0)
-  - DLKit/UIDevice+extended (0.1.0)
+  - DLKit (0.1.1):
+    - DLKit/DLAppInfo (= 0.1.1)
+    - DLKit/DLDESBase64 (= 0.1.1)
+    - DLKit/DLHttp (= 0.1.1)
+    - DLKit/UIDevice+extended (= 0.1.1)
+    - GTMBase64 (~> 1.0.0)
+  - DLKit/DLAppInfo (0.1.1):
+    - GTMBase64 (~> 1.0.0)
+  - DLKit/DLDESBase64 (0.1.1):
+    - GTMBase64 (~> 1.0.0)
+  - DLKit/DLHttp (0.1.1):
+    - GTMBase64 (~> 1.0.0)
+  - DLKit/UIDevice+extended (0.1.1):
+    - GTMBase64 (~> 1.0.0)
   - Expecta (1.0.5)
   - Expecta+Snapshots (3.1.1):
     - Expecta (~> 1.0)
@@ -16,6 +23,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - GTMBase64 (1.0.0)
   - Specta (1.0.6)
 
 DEPENDENCIES:
@@ -30,10 +38,11 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DLKit: 61a1d1e0ee7328a22850fb6b99ef2100c834a839
+  DLKit: ab7b717a5afca9c6b8b9ac03b5e904f2d26900e5
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Expecta+Snapshots: dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  GTMBase64: 0da7372e95f5171f3f652db38cde6716f8eb5e24
   Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
 
 PODFILE CHECKSUM: 5f4afeeb92f61d38bc127dd90a5fb3151d366218

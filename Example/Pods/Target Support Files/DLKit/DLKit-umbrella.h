@@ -3,6 +3,7 @@
 #endif
 
 #import "DLAppInfo.h"
+#import "DLDESBase64.h"
 #import "DLHttp.h"
 #import "UIDevice+extended.h"
 #import "UIDevice+name.h"

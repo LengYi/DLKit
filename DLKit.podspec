@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Http请求,获取设备信息,获取App信息'
 
 # This description is used to generate tags and improve search results.
@@ -25,12 +25,13 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '707689817@qq.com' => '707689817@qq.com' }
-  s.source           = { :git => 'https://github.com/707689817@qq.com/DLKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/LengYi/DLKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   #s.source_files = 'DLKit/Classes/**/*'
+
   s.subspec 'DLHttp' do |http|
       http.source_files = 'DLKit/Classes/Base/DLNet/Request/**/*'
   end
@@ -43,11 +44,15 @@ TODO: Add long description of the pod here.
     info.source_files = 'DLKit/Classes/Base/App/**/*'
   end
 
+  s.subspec 'DLDESBase64' do |des|
+    des.source_files = 'DLKit/Classes/Base/Encrypt/DESBase64/**/*'
+  end
+
   # s.resource_bundles = {
   #   'DLKit' => ['DLKit/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit', 'AdSupport','Foundation'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'GTMBase64', '~> 1.0.0'
 end

@@ -8,6 +8,7 @@
 
 #import "UIDevice+extended.h"
 #import "AdSupport/AdSupport.h"
+#import <sys/sysctl.h>
 
 @implementation UIDevice (extended)
 
