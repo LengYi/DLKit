@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.1.2'
-  s.summary          = 'Http请求,获取设备信息,获取App信息'
+  s.version          = '0.1.3'
+  s.summary          = 'Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -46,6 +46,14 @@ TODO: Add long description of the pod here.
 
   s.subspec 'DLDESBase64' do |des|
     des.source_files = 'DLKit/Classes/Base/Encrypt/DESBase64/**/*'
+  end
+
+  s.subspec 'DLDownloadFile' do |download|
+    download.source_files = 'DLKit/Classes/Base/DLNet/Download/**/*'
+  end
+
+   s.subspec 'DLDocumentPath' do |documentPath|
+    documentPath.source_files = 'DLKit/Classes/Base/DLPath/**/*'
   end
 
   # s.resource_bundles = {
