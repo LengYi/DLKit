@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.1.6'
+  s.version          = '0.1.8'
   s.summary          = 'Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器'
 
 # This description is used to generate tags and improve search results.
