@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.1.3'
+  s.version          = '0.1.6'
   s.summary          = 'Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器'
 
 # This description is used to generate tags and improve search results.
@@ -29,38 +29,48 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.default_subspec = 'Classes'     # 需要设置否则使用该库时,无法按正常文件结构浏览
 
-  #s.source_files = 'DLKit/Classes/**/*'
+  s.subspec 'Classes' do |classes|
 
-  s.subspec 'DLHttp' do |http|
-      http.source_files = 'DLKit/Classes/Base/DLNet/Request/**/*'
+    classes.subspec 'Base' do |base|
+      base.subspec 'DLAppInfo' do |info|
+        info.source_files = 'DLKit/Classes/Base/App/**/*'
+        info.public_header_files = 'DLKit/Classes/Base/App/**/*.h'
+      end
+
+      base.subspec 'DLNet' do |dlnet|
+         dlnet.subspec 'DLDownloadFile' do |download|
+           download.source_files = 'DLKit/Classes/Base/DLNet/DLDownloadFile/**/*'
+           download.dependency 'DLKit/Classes/Base/DLUIKitExtended/NSURL'   ##依赖NSURL+DLAdditions 这个subspecs
+         end
+        dlnet.subspec 'DLHttp' do |http|
+          http.source_files = 'DLKit/Classes/Base/DLNet/DLHttp/**/*'
+        end
+       end 
+
+      base.subspec 'DLPath' do |dlpath|
+        dlpath.source_files = 'DLKit/Classes/Base/DLPath/**/*'
+      end
+
+      base.subspec 'DLUIKitExtended' do |uikit|
+        uikit.subspec 'Device' do |device|
+          device.source_files = 'DLKit/Classes/Base/DLUIKitExtended/Device/**/*'
+        end
+        uikit.subspec 'NSURL' do |nsurl|
+          nsurl.source_files = 'DLKit/Classes/Base/DLUIKitExtended/NSURL/**/*'
+        end
+      end
+
+      base.subspec 'Encrypt' do |encrypt|
+        encrypt.subspec 'DESBase64' do |base64|
+          base64.source_files = 'DLKit/Classes/Base/Encrypt/DESBase64/**/*'
+          base64.dependency 'GTMBase64', '~> 1.0.0'
+        end
+      end
+    end
   end
-
-  s.subspec 'UIDevice+extended' do |dev|
-      dev.source_files = 'DLKit/Classes/Base/DLUIKitExtended/Device/**/*'
-  end
-
-  s.subspec 'DLAppInfo' do |info|
-    info.source_files = 'DLKit/Classes/Base/App/**/*'
-  end
-
-  s.subspec 'DLDESBase64' do |des|
-    des.source_files = 'DLKit/Classes/Base/Encrypt/DESBase64/**/*'
-  end
-
-  s.subspec 'DLDownloadFile' do |download|
-    download.source_files = 'DLKit/Classes/Base/DLNet/Download/**/*'
-  end
-
-   s.subspec 'DLDocumentPath' do |documentPath|
-    documentPath.source_files = 'DLKit/Classes/Base/DLPath/**/*'
-  end
-
-  # s.resource_bundles = {
-  #   'DLKit' => ['DLKit/Assets/*.png']
-  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit', 'AdSupport','Foundation'
-   s.dependency 'GTMBase64', '~> 1.0.0'
 end

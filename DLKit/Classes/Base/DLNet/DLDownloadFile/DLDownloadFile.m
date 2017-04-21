@@ -6,6 +6,7 @@
 //
 
 #import "DLDownloadFile.h"
+#import "NSURL+DLAdditions.h"
 
 @interface DLDownloadFile ()
 @property (nonatomic,assign) BOOL finished;
@@ -98,10 +99,8 @@
 - (BOOL)resumeFrom:(long long)from to:(long long)to{
     BOOL success = NO;
     if(_urlString && ![_urlString isEqualToString:@""]){
-//        NSString *aString = [_urlString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//        NSString *absoluteString = [aString stringByReplacingOccurrencesOfString:@"\\/" withString:@"/"];
-//        absoluteString = [absoluteString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-        NSURL *url = [self encodeURLWithString:_urlString];
+
+        NSURL *url = [NSURL encodeURLWithString:_urlString];
         if(url){
             NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
             [request setTimeoutInterval:30];
@@ -133,28 +132,6 @@
     }
     
     return success;
-}
-
-- (NSURL *)encodeURLWithString:(NSString *)string{
-    NSURL *url = [NSURL URLWithString:string];
-    if(url != nil){
-        CFStringRef originalString = (__bridge CFStringRef)string;
-        CFStringRef charactersToLeaveUnescaped = NULL;
-        CFStringRef legalURLCharactersToBeEscaped = (CFStringRef)@"!*'();@&=+$,#[]";
-        CFStringEncoding encoding = CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding);
-        
-        CFStringRef createString = CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, originalString, charactersToLeaveUnescaped, legalURLCharactersToBeEscaped, encoding);
-        
-        NSString *newString = (__bridge NSString *)createString;
-        
-        if (newString)
-        {
-            url = [NSURL URLWithString:newString];
-            CFRelease(createString);
-        }
-    }
-    
-    return url;
 }
 
 #pragma mark - NSURLConnection delegate methods

@@ -3,12 +3,13 @@
 #endif
 
 #import "DLAppInfo.h"
-#import "DLDESBase64.h"
-#import "DLDocumentPath.h"
 #import "DLDownloadFile.h"
 #import "DLHttp.h"
+#import "DLDocumentPath.h"
 #import "UIDevice+extended.h"
 #import "UIDevice+name.h"
+#import "NSURL+DLAdditions.h"
+#import "DLDESBase64.h"
 
 FOUNDATION_EXPORT double DLKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char DLKitVersionString[];

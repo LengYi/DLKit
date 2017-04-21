@@ -1,23 +1,30 @@
 PODS:
-  - DLKit (0.1.3):
-    - DLKit/DLAppInfo (= 0.1.3)
-    - DLKit/DLDESBase64 (= 0.1.3)
-    - DLKit/DLDocumentPath (= 0.1.3)
-    - DLKit/DLDownloadFile (= 0.1.3)
-    - DLKit/DLHttp (= 0.1.3)
-    - DLKit/UIDevice+extended (= 0.1.3)
-    - GTMBase64 (~> 1.0.0)
-  - DLKit/DLAppInfo (0.1.3):
-    - GTMBase64 (~> 1.0.0)
-  - DLKit/DLDESBase64 (0.1.3):
-    - GTMBase64 (~> 1.0.0)
-  - DLKit/DLDocumentPath (0.1.3):
-    - GTMBase64 (~> 1.0.0)
-  - DLKit/DLDownloadFile (0.1.3):
-    - GTMBase64 (~> 1.0.0)
-  - DLKit/DLHttp (0.1.3):
-    - GTMBase64 (~> 1.0.0)
-  - DLKit/UIDevice+extended (0.1.3):
+  - DLKit (0.1.6):
+    - DLKit/Classes (= 0.1.6)
+  - DLKit/Classes (0.1.6):
+    - DLKit/Classes/Base (= 0.1.6)
+  - DLKit/Classes/Base (0.1.6):
+    - DLKit/Classes/Base/DLAppInfo (= 0.1.6)
+    - DLKit/Classes/Base/DLNet (= 0.1.6)
+    - DLKit/Classes/Base/DLPath (= 0.1.6)
+    - DLKit/Classes/Base/DLUIKitExtended (= 0.1.6)
+    - DLKit/Classes/Base/Encrypt (= 0.1.6)
+  - DLKit/Classes/Base/DLAppInfo (0.1.6)
+  - DLKit/Classes/Base/DLNet (0.1.6):
+    - DLKit/Classes/Base/DLNet/DLDownloadFile (= 0.1.6)
+    - DLKit/Classes/Base/DLNet/DLHttp (= 0.1.6)
+  - DLKit/Classes/Base/DLNet/DLDownloadFile (0.1.6):
+    - DLKit/Classes/Base/DLUIKitExtended/NSURL
+  - DLKit/Classes/Base/DLNet/DLHttp (0.1.6)
+  - DLKit/Classes/Base/DLPath (0.1.6)
+  - DLKit/Classes/Base/DLUIKitExtended (0.1.6):
+    - DLKit/Classes/Base/DLUIKitExtended/Device (= 0.1.6)
+    - DLKit/Classes/Base/DLUIKitExtended/NSURL (= 0.1.6)
+  - DLKit/Classes/Base/DLUIKitExtended/Device (0.1.6)
+  - DLKit/Classes/Base/DLUIKitExtended/NSURL (0.1.6)
+  - DLKit/Classes/Base/Encrypt (0.1.6):
+    - DLKit/Classes/Base/Encrypt/DESBase64 (= 0.1.6)
+  - DLKit/Classes/Base/Encrypt/DESBase64 (0.1.6):
     - GTMBase64 (~> 1.0.0)
   - Expecta (1.0.5)
   - Expecta+Snapshots (3.1.1):
@@ -44,7 +51,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DLKit: 0ac019b3827fed4f70d2d5ac4dccb19cc35748e1
+  DLKit: 7bb7849c4f8dd5a751879c698537f3079d633e3d
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Expecta+Snapshots: dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a

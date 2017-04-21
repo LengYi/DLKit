@@ -1,6 +1,6 @@
 {
   "name": "DLKit",
-  "version": "0.1.3",
+  "version": "0.1.6",
   "summary": "Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/LengYi/DLKit",
@@ -13,45 +13,81 @@
   },
   "source": {
     "git": "https://github.com/LengYi/DLKit.git",
-    "tag": "0.1.3"
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "8.0"
   },
+  "default_subspecs": "Classes",
   "frameworks": [
     "UIKit",
     "AdSupport",
     "Foundation"
   ],
-  "dependencies": {
-    "GTMBase64": [
-      "~> 1.0.0"
-    ]
-  },
   "subspecs": [
     {
-      "name": "DLHttp",
-      "source_files": "DLKit/Classes/Base/DLNet/Request/**/*"
-    },
-    {
-      "name": "UIDevice+extended",
-      "source_files": "DLKit/Classes/Base/DLUIKitExtended/Device/**/*"
-    },
-    {
-      "name": "DLAppInfo",
-      "source_files": "DLKit/Classes/Base/App/**/*"
-    },
-    {
-      "name": "DLDESBase64",
-      "source_files": "DLKit/Classes/Base/Encrypt/DESBase64/**/*"
-    },
-    {
-      "name": "DLDownloadFile",
-      "source_files": "DLKit/Classes/Base/DLNet/Download/**/*"
-    },
-    {
-      "name": "DLDocumentPath",
-      "source_files": "DLKit/Classes/Base/DLPath/**/*"
+      "name": "Classes",
+      "subspecs": [
+        {
+          "name": "Base",
+          "subspecs": [
+            {
+              "name": "DLAppInfo",
+              "source_files": "DLKit/Classes/Base/App/**/*",
+              "public_header_files": "DLKit/Classes/Base/App/**/*.h"
+            },
+            {
+              "name": "DLNet",
+              "subspecs": [
+                {
+                  "name": "DLDownloadFile",
+                  "source_files": "DLKit/Classes/Base/DLNet/DLDownloadFile/**/*",
+                  "dependencies": {
+                    "DLKit/Classes/Base/DLUIKitExtended/NSURL": [
+
+                    ]
+                  }
+                },
+                {
+                  "name": "DLHttp",
+                  "source_files": "DLKit/Classes/Base/DLNet/DLHttp/**/*"
+                }
+              ]
+            },
+            {
+              "name": "DLPath",
+              "source_files": "DLKit/Classes/Base/DLPath/**/*"
+            },
+            {
+              "name": "DLUIKitExtended",
+              "subspecs": [
+                {
+                  "name": "Device",
+                  "source_files": "DLKit/Classes/Base/DLUIKitExtended/Device/**/*"
+                },
+                {
+                  "name": "NSURL",
+                  "source_files": "DLKit/Classes/Base/DLUIKitExtended/NSURL/**/*"
+                }
+              ]
+            },
+            {
+              "name": "Encrypt",
+              "subspecs": [
+                {
+                  "name": "DESBase64",
+                  "source_files": "DLKit/Classes/Base/Encrypt/DESBase64/**/*",
+                  "dependencies": {
+                    "GTMBase64": [
+                      "~> 1.0.0"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
