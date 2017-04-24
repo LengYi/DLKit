@@ -12,6 +12,7 @@
 		587564051EA868C3001D6B97 /* Test_DLAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 587564041EA868C3001D6B97 /* Test_DLAppInfo.m */; };
 		5875642E1EA8C15A001D6B97 /* Test_DLDocumentPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5875642D1EA8C15A001D6B97 /* Test_DLDocumentPath.m */; };
 		587564311EA8CC4C001D6B97 /* Test_DLDownloadFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 587564301EA8CC4C001D6B97 /* Test_DLDownloadFile.m */; };
+		5891BF201EAD9CF40014010D /* Test_NSStringEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891BF1F1EAD9CF40014010D /* Test_NSStringEx.m */; };
 		58B06BFE1E83D2C900C2C661 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B06BFD1E83D2C900C2C661 /* AdSupport.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -58,6 +59,8 @@
 		5875642D1EA8C15A001D6B97 /* Test_DLDocumentPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_DLDocumentPath.m; sourceTree = "<group>"; };
 		5875642F1EA8CC4C001D6B97 /* Test_DLDownloadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_DLDownloadFile.h; sourceTree = "<group>"; };
 		587564301EA8CC4C001D6B97 /* Test_DLDownloadFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_DLDownloadFile.m; sourceTree = "<group>"; };
+		5891BF1E1EAD9CF40014010D /* Test_NSStringEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_NSStringEx.h; sourceTree = "<group>"; };
+		5891BF1F1EAD9CF40014010D /* Test_NSStringEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_NSStringEx.m; sourceTree = "<group>"; };
 		58B06BFD1E83D2C900C2C661 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		5A38884C4475B472723E9E1D /* Pods_DLKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* DLKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +140,8 @@
 				5875642D1EA8C15A001D6B97 /* Test_DLDocumentPath.m */,
 				5875642F1EA8CC4C001D6B97 /* Test_DLDownloadFile.h */,
 				587564301EA8CC4C001D6B97 /* Test_DLDownloadFile.m */,
+				5891BF1E1EAD9CF40014010D /* Test_NSStringEx.h */,
+				5891BF1F1EAD9CF40014010D /* Test_NSStringEx.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -288,7 +293,8 @@
 				ORGANIZATIONNAME = "707689817@qq.com";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = AL3EKDF88S;
+						DevelopmentTeam = UH63RWQD5Z;
+						ProvisioningStyle = Automatic;
 					};
 					6003F5AD195388D20070C39A = {
 						LastSwiftMigration = 0820;
@@ -443,6 +449,7 @@
 				587563FF1EA86634001D6B97 /* Test_DLHttp.m in Sources */,
 				5875642E1EA8C15A001D6B97 /* Test_DLDocumentPath.m in Sources */,
 				587564311EA8CC4C001D6B97 /* Test_DLDownloadFile.m in Sources */,
+				5891BF201EAD9CF40014010D /* Test_NSStringEx.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,14 +577,18 @@
 			baseConfigurationReference = 550A7018D9B3979C68F013E7 /* Pods-DLKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AL3EKDF88S;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UH63RWQD5Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DLKit/DLKit-Prefix.pch";
 				INFOPLIST_FILE = "DLKit/DLKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test110;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ice110;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -587,14 +598,17 @@
 			baseConfigurationReference = 57729D19D699A6950B2D91E6 /* Pods-DLKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AL3EKDF88S;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UH63RWQD5Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DLKit/DLKit-Prefix.pch";
 				INFOPLIST_FILE = "DLKit/DLKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test110;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ice110;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

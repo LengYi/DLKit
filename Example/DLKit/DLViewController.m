@@ -12,6 +12,7 @@
 #import "Test_DLAppInfo.h"
 #import "Test_DLDocumentPath.h"
 #import "Test_DLDownloadFile.h"
+#import "Test_NSStringEx.h"
 
 @interface DLViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -42,7 +43,7 @@
         _dataArray = [[NSMutableArray alloc] init];
     }
     
-    [_dataArray addObjectsFromArray:@[@"Htpp Get Post 网络请求",@"DESBase64 加解密",@"App 版本号 sku 名称获取",@"App document cache tmp 数据存储路径",@"文件下载器"]];
+    [_dataArray addObjectsFromArray:@[@"Htpp Get Post 网络请求",@"DESBase64 加解密",@"App 版本号 sku 名称获取",@"App document cache tmp 数据存储路径",@"文件下载器",@"NSString+Extended"]];
 }
 
 #pragma  mark - UITableViewDataSource
@@ -81,6 +82,9 @@
             break;
         case 4:
             [Test_DLDownloadFile test];
+            break;
+        case 5:
+            [Test_NSStringEx test];
             break;
         default:
             break;

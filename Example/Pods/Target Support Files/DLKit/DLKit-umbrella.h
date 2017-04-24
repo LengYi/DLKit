@@ -8,6 +8,8 @@
 #import "DLDocumentPath.h"
 #import "UIDevice+extended.h"
 #import "UIDevice+name.h"
+#import "NSString+Encrypto.h"
+#import "NSString+Extension.h"
 #import "NSURL+DLAdditions.h"
 #import "DLDESBase64.h"
 
