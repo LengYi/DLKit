@@ -9,6 +9,7 @@
 #import "Test_NSStringEx.h"
 #import "NSString+Encrypto.h"
 #import "NSString+Extension.h"
+#import "NSData+Extended.h"
 
 @implementation Test_NSStringEx
 + (void)test{
@@ -19,10 +20,7 @@
     NSString *sHA1 = [str SHA1];
     NSLog(@"\n %@ SHA1 = %@ \n ",str,sHA1);
     
-    NSData *data = [NSString dataFromString:str];
-    NSLog(@"\n %@ NSData = %@ \n ",str,data);
-    
-    NSString *hexString = [NSString hexStringFromData:data];
+    NSString *hexString = [NSString hexStringFromData:[NSData dataFromString:str]];
     NSLog(@"\n %@ hexString = %@ \n ",str,hexString);
     
     NSData *originData = [NSString dataFromHexString:hexString];

@@ -10,14 +10,6 @@
 
 @implementation NSString (Extension)
 
-+ (NSData *)dataFromString:(NSString *)string{
-    if (!string) {
-        string = @"";
-    }
-    return [NSData dataWithBytes:[string UTF8String]
-                          length:strlen([string UTF8String])];
-}
-
 + (NSString *)stringFromData:(NSData *)data{
     if (!data) {
         return @"";

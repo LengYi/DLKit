@@ -13,6 +13,8 @@
 		5875642E1EA8C15A001D6B97 /* Test_DLDocumentPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5875642D1EA8C15A001D6B97 /* Test_DLDocumentPath.m */; };
 		587564311EA8CC4C001D6B97 /* Test_DLDownloadFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 587564301EA8CC4C001D6B97 /* Test_DLDownloadFile.m */; };
 		5891BF201EAD9CF40014010D /* Test_NSStringEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891BF1F1EAD9CF40014010D /* Test_NSStringEx.m */; };
+		5891BF271EADADFD0014010D /* Test_NSDataEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891BF261EADADFD0014010D /* Test_NSDataEx.m */; };
+		5891BF2A1EADC8790014010D /* Test_DLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891BF291EADC8790014010D /* Test_DLProtocol.m */; };
 		58B06BFE1E83D2C900C2C661 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B06BFD1E83D2C900C2C661 /* AdSupport.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -61,6 +63,10 @@
 		587564301EA8CC4C001D6B97 /* Test_DLDownloadFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_DLDownloadFile.m; sourceTree = "<group>"; };
 		5891BF1E1EAD9CF40014010D /* Test_NSStringEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_NSStringEx.h; sourceTree = "<group>"; };
 		5891BF1F1EAD9CF40014010D /* Test_NSStringEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_NSStringEx.m; sourceTree = "<group>"; };
+		5891BF251EADADFD0014010D /* Test_NSDataEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_NSDataEx.h; sourceTree = "<group>"; };
+		5891BF261EADADFD0014010D /* Test_NSDataEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_NSDataEx.m; sourceTree = "<group>"; };
+		5891BF281EADC8790014010D /* Test_DLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_DLProtocol.h; sourceTree = "<group>"; };
+		5891BF291EADC8790014010D /* Test_DLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_DLProtocol.m; sourceTree = "<group>"; };
 		58B06BFD1E83D2C900C2C661 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		5A38884C4475B472723E9E1D /* Pods_DLKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* DLKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +148,10 @@
 				587564301EA8CC4C001D6B97 /* Test_DLDownloadFile.m */,
 				5891BF1E1EAD9CF40014010D /* Test_NSStringEx.h */,
 				5891BF1F1EAD9CF40014010D /* Test_NSStringEx.m */,
+				5891BF251EADADFD0014010D /* Test_NSDataEx.h */,
+				5891BF261EADADFD0014010D /* Test_NSDataEx.m */,
+				5891BF281EADC8790014010D /* Test_DLProtocol.h */,
+				5891BF291EADC8790014010D /* Test_DLProtocol.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -442,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* DLAppDelegate.m in Sources */,
+				5891BF2A1EADC8790014010D /* Test_DLProtocol.m in Sources */,
 				587564051EA868C3001D6B97 /* Test_DLAppInfo.m in Sources */,
 				6003F5A7195388D20070C39A /* DLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -450,6 +461,7 @@
 				5875642E1EA8C15A001D6B97 /* Test_DLDocumentPath.m in Sources */,
 				587564311EA8CC4C001D6B97 /* Test_DLDownloadFile.m in Sources */,
 				5891BF201EAD9CF40014010D /* Test_NSStringEx.m in Sources */,
+				5891BF271EADADFD0014010D /* Test_NSDataEx.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

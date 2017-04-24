@@ -1,8 +1,8 @@
 {
   "name": "DLKit",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "summary": "构建App常用的基本功能库",
-  "description": "Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器,UIKitExtened",
+  "description": "Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器,网络数据打包解析,UIKitExtened",
   "homepage": "https://github.com/LengYi/DLKit",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/LengYi/DLKit.git",
-    "tag": "0.2.0"
+    "tag": "0.2.2"
   },
   "platforms": {
     "ios": "8.0"
@@ -72,6 +72,10 @@
                 {
                   "name": "NSString",
                   "source_files": "DLKit/Classes/Base/DLUIKitExtended/NSString/**/*"
+                },
+                {
+                  "name": "NSData",
+                  "source_files": "DLKit/Classes/Base/DLUIKitExtended/NSData/**/*"
                 }
               ]
             },
@@ -88,6 +92,10 @@
                   }
                 }
               ]
+            },
+            {
+              "name": "DLData",
+              "source_files": "DLKit/Classes/Base/DLData/**/*"
             }
           ]
         }

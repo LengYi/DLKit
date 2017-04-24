@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.2.0'
+  s.version          = '0.2.2'
   s.summary          = '构建App常用的基本功能库'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-   Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器,UIKitExtened
+   Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器,网络数据打包解析,UIKitExtened
                        DESC
 
   s.homepage         = 'https://github.com/LengYi/DLKit'
@@ -63,6 +63,9 @@ Pod::Spec.new do |s|
         uikit.subspec 'NSString' do |string|
           string.source_files = 'DLKit/Classes/Base/DLUIKitExtended/NSString/**/*'
         end
+        uikit.subspec 'NSData' do |data|
+          data.source_files = 'DLKit/Classes/Base/DLUIKitExtended/NSData/**/*'
+        end
 
       end
 
@@ -72,6 +75,10 @@ Pod::Spec.new do |s|
           base64.dependency 'GTMBase64', '~> 1.0.0'
         end
       end
+
+      base.subspec 'DLData' do |dldata|
+        dldata.source_files = 'DLKit/Classes/Base/DLData/**/*'
+        end
     end
   end
 

@@ -10,7 +10,6 @@
 
 @interface NSString (Extension)
 
-+ (NSData *)dataFromString:(NSString *)string;
 + (NSString *)stringFromData:(NSData *)data;
 
 + (NSData *)dataFromHexString:(NSString *)hexString;
