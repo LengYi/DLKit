@@ -16,6 +16,7 @@
 #import "NSString+Extension.h"
 #import "NSURL+DLAdditions.h"
 #import "DLDESBase64.h"
+#import "DLKeyChain.h"
 
 FOUNDATION_EXPORT double DLKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char DLKitVersionString[];

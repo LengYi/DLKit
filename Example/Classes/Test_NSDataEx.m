@@ -10,9 +10,16 @@
 #import "NSData+Extended.h"
 
 @implementation Test_NSDataEx
+
 + (void)test{
     NSString *str = @"hello world!";
     NSData *data = [NSData dataFromString:str];
-    NSLog(@"\n %@ data = %@",str,data);
+    NSLog(@"\n %@ data = %@\n",str,data);
+    
+    NSDictionary *dict = @{@"base64" : @"json str....."};
+    NSData *jsonData = [NSData dictToJsonData:dict];
+    NSDictionary *jsonDict = [NSData jsonDataToDict:jsonData];
+    NSLog(@"\n jsonData = %@ \n jsonDict = %@ \n",jsonData,jsonDict);
 }
+
 @end

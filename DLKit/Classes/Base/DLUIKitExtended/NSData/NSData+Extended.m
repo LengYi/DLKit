@@ -36,4 +36,24 @@
     return [NSData dataFromString:numberStr];
 }
 
++ (NSData *)dictToJsonData:(NSDictionary *)dict{
+    if (!dict) {
+        return nil;
+    }
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict
+                                                       options:NSJSONWritingPrettyPrinted
+                                                         error:nil];
+    return jsonData;
+}
+
++ (NSDictionary *)jsonDataToDict:(NSData *)data{
+    if (!data) {
+        return nil;
+    }
+
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data
+                                                         options:NSJSONReadingMutableContainers
+                                                           error:nil];
+    return dict;
+}
 @end
