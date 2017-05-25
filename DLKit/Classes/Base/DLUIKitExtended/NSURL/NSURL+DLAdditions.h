@@ -10,5 +10,6 @@
 
 // URL Encode
 + (NSURL *)encodeURLWithString:(NSString *)string;
-
++ (NSString *)decodedURLString:(NSString *)string;
++ (NSDictionary *)parseUrlParamers:(NSURL *)url;
 @end

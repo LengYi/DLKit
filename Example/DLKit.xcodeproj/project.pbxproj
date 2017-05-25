@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5857E12A1ED6B33F0084B76A /* Test_NSURLEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 5857E1291ED6B33F0084B76A /* Test_NSURLEx.m */; };
 		587563FF1EA86634001D6B97 /* Test_DLHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 587563FE1EA86634001D6B97 /* Test_DLHttp.m */; };
 		587564021EA866D9001D6B97 /* Test_DLDESBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 587564011EA866D9001D6B97 /* Test_DLDESBase64.m */; };
 		587564051EA868C3001D6B97 /* Test_DLAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 587564041EA868C3001D6B97 /* Test_DLAppInfo.m */; };
@@ -52,6 +53,8 @@
 		281BD7B4B30515E7938C8B6B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		550A7018D9B3979C68F013E7 /* Pods-DLKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLKit_Example/Pods-DLKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		57729D19D699A6950B2D91E6 /* Pods-DLKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLKit_Example/Pods-DLKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5857E1281ED6B33F0084B76A /* Test_NSURLEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_NSURLEx.h; sourceTree = "<group>"; };
+		5857E1291ED6B33F0084B76A /* Test_NSURLEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_NSURLEx.m; sourceTree = "<group>"; };
 		587563FD1EA86634001D6B97 /* Test_DLHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_DLHttp.h; sourceTree = "<group>"; };
 		587563FE1EA86634001D6B97 /* Test_DLHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_DLHttp.m; sourceTree = "<group>"; };
 		587564001EA866D9001D6B97 /* Test_DLDESBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_DLDESBase64.h; sourceTree = "<group>"; };
@@ -157,6 +160,8 @@
 				5891BF291EADC8790014010D /* Test_DLProtocol.m */,
 				588DF5AF1EBC190600A90CCC /* Test_DLKeyChain.h */,
 				588DF5B01EBC190600A90CCC /* Test_DLKeyChain.m */,
+				5857E1281ED6B33F0084B76A /* Test_NSURLEx.h */,
+				5857E1291ED6B33F0084B76A /* Test_NSURLEx.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -463,6 +468,7 @@
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				587564021EA866D9001D6B97 /* Test_DLDESBase64.m in Sources */,
 				587563FF1EA86634001D6B97 /* Test_DLHttp.m in Sources */,
+				5857E12A1ED6B33F0084B76A /* Test_NSURLEx.m in Sources */,
 				588DF5B11EBC190600A90CCC /* Test_DLKeyChain.m in Sources */,
 				5875642E1EA8C15A001D6B97 /* Test_DLDocumentPath.m in Sources */,
 				587564311EA8CC4C001D6B97 /* Test_DLDownloadFile.m in Sources */,
