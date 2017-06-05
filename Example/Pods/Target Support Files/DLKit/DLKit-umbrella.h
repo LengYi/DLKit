@@ -15,6 +15,7 @@
 #import "NSString+Encrypto.h"
 #import "NSString+Extension.h"
 #import "NSURL+DLAdditions.h"
+#import "DLAES128.h"
 #import "DLDESBase64.h"
 #import "DLKeyChain.h"
 

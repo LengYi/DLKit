@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.2.4'
+  s.version          = '0.2.5'
   s.summary          = '构建App常用的基本功能库'
 
 # This description is used to generate tags and improve search results.
@@ -73,6 +73,10 @@ Pod::Spec.new do |s|
         encrypt.subspec 'DESBase64' do |base64|
           base64.source_files = 'DLKit/Classes/Base/Encrypt/DESBase64/**/*'
           base64.dependency 'GTMBase64', '~> 1.0.0'
+        end
+        encrypt.subspec 'AES128' do |aes|
+          aes.source_files = 'DLKit/Classes/Base/Encrypt/AES128/**/*'
+          aes.dependency 'GTMBase64', '~> 1.0.0'
         end
       end
 

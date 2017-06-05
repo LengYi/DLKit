@@ -17,6 +17,7 @@
 #import "Test_DLProtocol.h"
 #import "Test_DLKeyChain.h"
 #import "Test_NSURLEx.h"
+#import "Test_DLAES128.h"
 
 @interface DLViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -47,7 +48,7 @@
         _dataArray = [[NSMutableArray alloc] init];
     }
     
-    [_dataArray addObjectsFromArray:@[@"Htpp Get Post 网络请求",@"DESBase64 加解密",@"App 版本号 sku 名称获取",@"App document cache tmp 数据存储路径",@"文件下载器",@"网络数据打包解析",@"NSString+Extended",@"NSData+Extended",@"NSURL+Extended",@"KeyChain 存储"]];
+    [_dataArray addObjectsFromArray:@[@"Htpp Get Post 网络请求",@"DESBase64 加解密",@"App 版本号 sku 名称获取",@"App document cache tmp 数据存储路径",@"文件下载器",@"网络数据打包解析",@"NSString+Extended",@"NSData+Extended",@"NSURL+Extended",@"KeyChain 存储",@"AES128 加解密"]];
 }
 
 #pragma  mark - UITableViewDataSource
@@ -101,6 +102,9 @@
             break;
         case 9:
             [Test_DLKeyChain test];
+            break;
+        case 10:
+            [Test_DLAES128 test];
             break;
         default:
             break;
