@@ -1,42 +1,44 @@
 PODS:
-  - DLKit (0.2.5):
-    - DLKit/Classes (= 0.2.5)
-  - DLKit/Classes (0.2.5):
-    - DLKit/Classes/Base (= 0.2.5)
-  - DLKit/Classes/Base (0.2.5):
-    - DLKit/Classes/Base/DLAppInfo (= 0.2.5)
-    - DLKit/Classes/Base/DLData (= 0.2.5)
-    - DLKit/Classes/Base/DLNet (= 0.2.5)
-    - DLKit/Classes/Base/DLPath (= 0.2.5)
-    - DLKit/Classes/Base/DLUIKitExtended (= 0.2.5)
-    - DLKit/Classes/Base/Encrypt (= 0.2.5)
-    - DLKit/Classes/Base/Storage (= 0.2.5)
-  - DLKit/Classes/Base/DLAppInfo (0.2.5)
-  - DLKit/Classes/Base/DLData (0.2.5)
-  - DLKit/Classes/Base/DLNet (0.2.5):
-    - DLKit/Classes/Base/DLNet/DLDownloadFile (= 0.2.5)
-    - DLKit/Classes/Base/DLNet/DLHttp (= 0.2.5)
-  - DLKit/Classes/Base/DLNet/DLDownloadFile (0.2.5):
+  - DLKit (0.2.6):
+    - DLKit/Classes (= 0.2.6)
+  - DLKit/Classes (0.2.6):
+    - DLKit/Classes/Base (= 0.2.6)
+  - DLKit/Classes/Base (0.2.6):
+    - DLKit/Classes/Base/DLAppInfo (= 0.2.6)
+    - DLKit/Classes/Base/DLData (= 0.2.6)
+    - DLKit/Classes/Base/DLNet (= 0.2.6)
+    - DLKit/Classes/Base/DLPath (= 0.2.6)
+    - DLKit/Classes/Base/DLUIKitExtended (= 0.2.6)
+    - DLKit/Classes/Base/Encrypt (= 0.2.6)
+    - DLKit/Classes/Base/Storage (= 0.2.6)
+  - DLKit/Classes/Base/DLAppInfo (0.2.6)
+  - DLKit/Classes/Base/DLData (0.2.6)
+  - DLKit/Classes/Base/DLNet (0.2.6):
+    - DLKit/Classes/Base/DLNet/DLDownloadFile (= 0.2.6)
+    - DLKit/Classes/Base/DLNet/DLHttp (= 0.2.6)
+  - DLKit/Classes/Base/DLNet/DLDownloadFile (0.2.6):
     - DLKit/Classes/Base/DLUIKitExtended/NSURL
-  - DLKit/Classes/Base/DLNet/DLHttp (0.2.5)
-  - DLKit/Classes/Base/DLPath (0.2.5)
-  - DLKit/Classes/Base/DLUIKitExtended (0.2.5):
-    - DLKit/Classes/Base/DLUIKitExtended/Device (= 0.2.5)
-    - DLKit/Classes/Base/DLUIKitExtended/NSData (= 0.2.5)
-    - DLKit/Classes/Base/DLUIKitExtended/NSString (= 0.2.5)
-    - DLKit/Classes/Base/DLUIKitExtended/NSURL (= 0.2.5)
-  - DLKit/Classes/Base/DLUIKitExtended/Device (0.2.5)
-  - DLKit/Classes/Base/DLUIKitExtended/NSData (0.2.5)
-  - DLKit/Classes/Base/DLUIKitExtended/NSString (0.2.5)
-  - DLKit/Classes/Base/DLUIKitExtended/NSURL (0.2.5)
-  - DLKit/Classes/Base/Encrypt (0.2.5):
-    - DLKit/Classes/Base/Encrypt/AES128 (= 0.2.5)
-    - DLKit/Classes/Base/Encrypt/DESBase64 (= 0.2.5)
-  - DLKit/Classes/Base/Encrypt/AES128 (0.2.5):
+  - DLKit/Classes/Base/DLNet/DLHttp (0.2.6)
+  - DLKit/Classes/Base/DLPath (0.2.6)
+  - DLKit/Classes/Base/DLUIKitExtended (0.2.6):
+    - DLKit/Classes/Base/DLUIKitExtended/Device (= 0.2.6)
+    - DLKit/Classes/Base/DLUIKitExtended/NSData (= 0.2.6)
+    - DLKit/Classes/Base/DLUIKitExtended/NSObject (= 0.2.6)
+    - DLKit/Classes/Base/DLUIKitExtended/NSString (= 0.2.6)
+    - DLKit/Classes/Base/DLUIKitExtended/NSURL (= 0.2.6)
+  - DLKit/Classes/Base/DLUIKitExtended/Device (0.2.6)
+  - DLKit/Classes/Base/DLUIKitExtended/NSData (0.2.6)
+  - DLKit/Classes/Base/DLUIKitExtended/NSObject (0.2.6)
+  - DLKit/Classes/Base/DLUIKitExtended/NSString (0.2.6)
+  - DLKit/Classes/Base/DLUIKitExtended/NSURL (0.2.6)
+  - DLKit/Classes/Base/Encrypt (0.2.6):
+    - DLKit/Classes/Base/Encrypt/AES128 (= 0.2.6)
+    - DLKit/Classes/Base/Encrypt/DESBase64 (= 0.2.6)
+  - DLKit/Classes/Base/Encrypt/AES128 (0.2.6):
     - GTMBase64 (~> 1.0.0)
-  - DLKit/Classes/Base/Encrypt/DESBase64 (0.2.5):
+  - DLKit/Classes/Base/Encrypt/DESBase64 (0.2.6):
     - GTMBase64 (~> 1.0.0)
-  - DLKit/Classes/Base/Storage (0.2.5)
+  - DLKit/Classes/Base/Storage (0.2.6)
   - Expecta (1.0.5)
   - Expecta+Snapshots (3.1.1):
     - Expecta (~> 1.0)
@@ -62,13 +64,13 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DLKit: 32bf399e90202ac6198df176f72567d231611d52
+  DLKit: 6ada29b5f1a7c1dc3893b6efc26d62aefcd40597
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Expecta+Snapshots: dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   GTMBase64: 0da7372e95f5171f3f652db38cde6716f8eb5e24
   Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
 
-PODFILE CHECKSUM: 5f4afeeb92f61d38bc127dd90a5fb3151d366218
+PODFILE CHECKSUM: 7130dc5ef5704d0ff94e11d0c3fd8c3f4aebd337
 
 COCOAPODS: 1.1.1

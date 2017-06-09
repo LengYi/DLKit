@@ -12,6 +12,7 @@
 #import "UIDevice+extended.h"
 #import "UIDevice+name.h"
 #import "NSData+Extended.h"
+#import "NSObject+DataException.h"
 #import "NSString+Encrypto.h"
 #import "NSString+Extension.h"
 #import "NSURL+DLAdditions.h"

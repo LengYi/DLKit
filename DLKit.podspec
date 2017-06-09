@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.2.5'
+  s.version          = '0.2.6'
   s.summary          = '构建App常用的基本功能库'
 
 # This description is used to generate tags and improve search results.
@@ -65,6 +65,9 @@ Pod::Spec.new do |s|
         end
         uikit.subspec 'NSData' do |data|
           data.source_files = 'DLKit/Classes/Base/DLUIKitExtended/NSData/**/*'
+        end
+        uikit.subspec 'NSObject' do |obj|
+          obj.source_files = 'DLKit/Classes/Base/DLUIKitExtended/NSObject/**/*'
         end
 
       end
