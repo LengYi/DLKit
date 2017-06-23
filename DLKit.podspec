@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.2.6'
+  s.version          = '0.3.0'
   s.summary          = '构建App常用的基本功能库'
 
 # This description is used to generate tags and improve search results.
@@ -66,6 +66,9 @@ Pod::Spec.new do |s|
         uikit.subspec 'NSData' do |data|
           data.source_files = 'DLKit/Classes/Base/DLUIKitExtended/NSData/**/*'
         end
+        uikit.subspec 'NSDate' do |date|
+          date.source_files = 'DLKit/Classes/Base/DLUIKitExtended/NSDate/**/*'
+        end
         uikit.subspec 'NSObject' do |obj|
           obj.source_files = 'DLKit/Classes/Base/DLUIKitExtended/NSObject/**/*'
         end
@@ -90,6 +93,13 @@ Pod::Spec.new do |s|
         base.subspec 'Storage' do |storage|
           storage.source_files = 'DLKit/Classes/Base/Storage/KeyChain/**/*'
           end
+    end
+
+    classes.subspec 'Assist' do |assist|
+      assist.subspec 'DLLog' do |log|
+          log.source_files = 'DLKit/Classes/Assist/Statistics/Log/DLLog/**/*'
+          log.dependency 'DLKit/Classes/Base/DLUIKitExtended/NSDate'
+      end
     end
   end
 

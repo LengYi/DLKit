@@ -18,6 +18,8 @@
 #import "Test_DLKeyChain.h"
 #import "Test_NSURLEx.h"
 #import "Test_DLAES128.h"
+#import "Test_DLLog.h"
+#import "Test_NSDateEx.h"
 
 @interface DLViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -29,9 +31,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    
     [self loadData];
-    [self createTableView];    
+    [self createTableView];
 }
 
 - (void)createTableView{
@@ -57,7 +59,9 @@
                                       @"NSData+Extended",
                                       @"NSURL+Extended",
                                       @"KeyChain 存储",
-                                      @"AES128 加解密"]];
+                                      @"AES128 加解密",
+                                      @"Log日志",
+                                      @"NSDate+Extended"]];
 }
 
 #pragma  mark - UITableViewDataSource
@@ -115,6 +119,10 @@
         case 10:
             [Test_DLAES128 test];
             break;
+        case 11:
+            [Test_DLLog test];
+        case 12:
+            [Test_NSDateEx test];
         default:
             break;
     }

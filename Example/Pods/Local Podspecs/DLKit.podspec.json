@@ -1,6 +1,6 @@
 {
   "name": "DLKit",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "summary": "构建App常用的基本功能库",
   "description": "Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器,网络数据打包解析,UIKitExtened,KeyChain数据存储",
   "homepage": "https://github.com/LengYi/DLKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/LengYi/DLKit.git",
-    "tag": "0.2.6"
+    "tag": "0.3.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -78,6 +78,10 @@
                   "source_files": "DLKit/Classes/Base/DLUIKitExtended/NSData/**/*"
                 },
                 {
+                  "name": "NSDate",
+                  "source_files": "DLKit/Classes/Base/DLUIKitExtended/NSDate/**/*"
+                },
+                {
                   "name": "NSObject",
                   "source_files": "DLKit/Classes/Base/DLUIKitExtended/NSObject/**/*"
                 }
@@ -113,6 +117,20 @@
             {
               "name": "Storage",
               "source_files": "DLKit/Classes/Base/Storage/KeyChain/**/*"
+            }
+          ]
+        },
+        {
+          "name": "Assist",
+          "subspecs": [
+            {
+              "name": "DLLog",
+              "source_files": "DLKit/Classes/Assist/Statistics/Log/DLLog/**/*",
+              "dependencies": {
+                "DLKit/Classes/Base/DLUIKitExtended/NSDate": [
+
+                ]
+              }
             }
           ]
         }
