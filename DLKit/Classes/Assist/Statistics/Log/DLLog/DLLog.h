@@ -10,15 +10,14 @@
 #import <UIKit/UIKit.h>
 
 /**
- *  调试模式默认输出到控制台
- *  非调试模式日志保存在 /Document/log.txt中
+ *  NSLog输出到控制台,并增强输出功能
+ *  DLog日志保存在 /Document/log.txt中
  *  第三方日志框架  pod 'CocoaLumberjack' 有时间继续完善自己的框架
  */
-#if DEBUG
-#define DLog(s, ...) NSLog( @"====>>>>>  %@ #%d: %@",[NSString stringWithUTF8String:__FUNCTION__],__LINE__,[NSString stringWithFormat:(s), ##__VA_ARGS__] )
-#else
+
+#define NSLog(s, ...) NSLog( @"====>>>>>  %@ #%d: %@",[NSString stringWithUTF8String:__FUNCTION__],__LINE__,[NSString stringWithFormat:(s), ##__VA_ARGS__] )
 #define DLog(...) [DLLog log:[NSString stringWithFormat:__VA_ARGS__] func:[NSString stringWithUTF8String:__FUNCTION__] linnum:__LINE__];
-#endif
+
 
 typedef void(^MailVCBlock)(UIViewController *vc,BOOL isDismiss);
 

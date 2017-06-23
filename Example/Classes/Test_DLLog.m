@@ -11,6 +11,7 @@
 
 @implementation Test_DLLog
 + (void)test{
+    NSLog(@"控制台日志");
     DLog(@"日志信息 99oiuppp");
     DLog(@"爱你哟");
     DLog(@"9999999");

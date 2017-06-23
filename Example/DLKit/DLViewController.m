@@ -121,8 +121,10 @@
             break;
         case 11:
             [Test_DLLog test];
+            break;
         case 12:
             [Test_NSDateEx test];
+            break;
         default:
             break;
     }
