@@ -7,23 +7,21 @@
 //
 
 #import "DLViewController.h"
+#import "TBViewController.h"
 #import "Test_DLHttp.h"
-#import "Test_DLDESBase64.h"
 #import "Test_DLAppInfo.h"
 #import "Test_DLDocumentPath.h"
 #import "Test_DLDownloadFile.h"
-#import "Test_NSStringEx.h"
-#import "Test_NSDataEx.h"
 #import "Test_DLProtocol.h"
 #import "Test_DLKeyChain.h"
-#import "Test_NSURLEx.h"
-#import "Test_DLAES128.h"
 #import "Test_DLLog.h"
-#import "Test_NSDateEx.h"
+#import "ExViewController.h"
+#import "SafeExViewController.h"
+#import "EncryViewController.h"
 
-@interface DLViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic,strong) UITableView *tableView;
-@property (nonatomic,strong) NSMutableArray *dataArray;
+@interface DLViewController ()<TBViewControllerDelegate>
+@property (nonatomic,strong) TBViewController *tbVC;
+@property (nonatomic,strong) UINavigationController *nav;
 @end
 
 @implementation DLViewController
@@ -32,65 +30,47 @@
 {
     [super viewDidLoad];
     
-    [self loadData];
     [self createTableView];
 }
 
 - (void)createTableView{
-    if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
-        [self.view addSubview:_tableView];
-    }
-}
-
-- (void)loadData{
-    if (!_dataArray) {
-        _dataArray = [[NSMutableArray alloc] init];
+    if (!_tbVC) {
+        _tbVC = [[TBViewController alloc] init];
+        _tbVC.tableDelegate = self;
+        _tbVC.dataArray = [self loadData];
     }
     
-    [_dataArray addObjectsFromArray:@[@"Htpp Get Post 网络请求",
-                                      @"DESBase64 加解密",
+    _nav = [[UINavigationController alloc] initWithRootViewController:_tbVC];
+    [self.view addSubview:_nav.view];
+}
+
+- (NSMutableArray *)loadData{
+    NSMutableArray *dataArray = [[NSMutableArray alloc] init];
+    
+    [dataArray addObjectsFromArray:@[@"Htpp Get Post 网络请求",
+                                      @"加解密",
                                       @"App 版本号 sku 名称获取",
                                       @"App document cache tmp 数据存储路径",
                                       @"文件下载器",@"网络数据打包解析",
-                                      @"NSString+Extended",
-                                      @"NSData+Extended",
-                                      @"NSURL+Extended",
+                                      @"UIKitExtended",
+                                      @"UIKitSafeExtended",
                                       @"KeyChain 存储",
-                                      @"AES128 加解密",
-                                      @"Log日志",
-                                      @"NSDate+Extended"]];
+                                      @"Log日志"]];
+    return dataArray;
 }
 
-#pragma  mark - UITableViewDataSource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [_dataArray count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *identify = @"iden";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identify];
-    }
-    
-    cell.textLabel.text = [_dataArray objectAtIndex:indexPath.row];
-    return cell;
-}
-#pragma  mark - UITableViewDelegate
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;{
-    return 60;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *title = [_tbVC.dataArray objectAtIndex:indexPath.row];
     switch (indexPath.row) {
         case 0:
             [Test_DLHttp test];
             break;
-        case 1:
-            [Test_DLDESBase64 test];
+        case 1:{
+            EncryViewController *vc = [[EncryViewController alloc] init];
+            vc.title = title;
+            [_nav pushViewController:vc animated:YES];
+            break;
+        }
             break;
         case 2:
             [Test_DLAppInfo test];
@@ -104,26 +84,23 @@
         case 5:
             [Test_DLProtocol test];
             break;
-        case 6:
-            [Test_NSStringEx test];
+        case 6:{
+            ExViewController *vc = [[ExViewController alloc] init];
+            vc.title = title;
+            [_nav pushViewController:vc animated:YES];
             break;
-        case 7:
-            [Test_NSDataEx test];
+        }
+        case 7:{
+            SafeExViewController *vc = [[SafeExViewController alloc] init];
+            vc.title = title;
+            [_nav pushViewController:vc animated:YES];
             break;
+        }
         case 8:
-            [Test_NSURLEx test];
-            break;
-        case 9:
             [Test_DLKeyChain test];
             break;
-        case 10:
-            [Test_DLAES128 test];
-            break;
-        case 11:
+        case 9:
             [Test_DLLog test];
-            break;
-        case 12:
-            [Test_NSDateEx test];
             break;
         default:
             break;

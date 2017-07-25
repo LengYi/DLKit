@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.3.1'
+  s.version          = '0.3.2'
   s.summary          = '构建App常用的基本功能库'
 
 # This description is used to generate tags and improve search results.
@@ -75,6 +75,17 @@ Pod::Spec.new do |s|
 
       end
 
+      base.subspec 'DLUIKitSafeExtended' do |safekit|
+        safekit.subspec 'NSMutableArray' do |array|
+          array.source_files = 'DLKit/Classes/Base/DLUIKitSafeExtended/NSMutableArray/**/*'
+          array.dependency 'DLKit/Classes/Base/DLUIKitExtended/NSObject'
+        end
+        safekit.subspec 'NSMutableDictionary' do |dic|
+          dic.source_files = 'DLKit/Classes/Base/DLUIKitSafeExtended/NSMutableDictionary/**/*'
+          dic.dependency 'DLKit/Classes/Base/DLUIKitExtended/NSObject'
+        end
+      end 
+        
       base.subspec 'Encrypt' do |encrypt|
         encrypt.subspec 'DESBase64' do |base64|
           base64.source_files = 'DLKit/Classes/Base/Encrypt/DESBase64/**/*'
