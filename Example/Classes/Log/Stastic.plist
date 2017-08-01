@@ -1,0 +1,44 @@
+{
+	PV = {
+		"StatisticViewControllerA" = {
+			PVID = 1000;
+			PageName = "Activity A";
+		};
+		"StatisticViewControllerB" = {
+			PVID = 2000;
+			PageName = "Activity B";
+		};
+		"StatisticViewControllerC" = {
+			PVID = 3000;
+			PageName = "Activity C";
+		};
+	};
+	Event = {
+		"StatisticViewControllerB \U7edf\U8ba1\U4e8b\U4ef6" = {
+			EventID = 1000;
+			EventConfig = {
+				1001 = {
+					Target = "StatisticViewControllerB";
+					Selector = "didSelectRowAtIndexPath:";
+				};
+			};
+		};
+		"StatisticViewControllerC \U7edf\U8ba1\U4e8b\U4ef6" = {
+			EventID = 3000;
+			EventConfig = {
+				3001 = {
+					Target = "StatisticViewControllerC";
+					Selector = button0ClickAction;
+				};
+				3002 = {
+					Target = "StatisticViewControllerC";
+					Selector = button1ClickAction;
+				};
+				3003 = {
+					Selector = tapAction;
+					Target = "StatisticViewControllerC";
+				};
+			};
+		};
+	};
+}
