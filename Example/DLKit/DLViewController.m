@@ -18,6 +18,7 @@
 #import "ExViewController.h"
 #import "SafeExViewController.h"
 #import "EncryViewController.h"
+#import "StatisticViewController.h"
 
 @interface DLViewController ()<TBViewControllerDelegate>
 @property (nonatomic,strong) TBViewController *tbVC;
@@ -47,7 +48,7 @@
 - (NSMutableArray *)loadData{
     NSMutableArray *dataArray = [[NSMutableArray alloc] init];
     
-    [dataArray addObjectsFromArray:@[@"Htpp Get Post 网络请求",
+    [dataArray addObjectsFromArray:@[@"Http Get Post 网络请求",
                                       @"加解密",
                                       @"App 版本号 sku 名称获取",
                                       @"App document cache tmp 数据存储路径",
@@ -55,7 +56,8 @@
                                       @"UIKitExtended",
                                       @"UIKitSafeExtended",
                                       @"KeyChain 存储",
-                                      @"Log日志"]];
+                                      @"Log日志",
+                                      @"AOP 打点统计"]];
     return dataArray;
 }
 
@@ -102,6 +104,12 @@
         case 9:
             [Test_DLLog test];
             break;
+        case 10:{
+            StatisticViewController *vc = [[StatisticViewController alloc] init];
+            vc.title = title;
+            [_nav pushViewController:vc animated:NO];
+            break;
+        }
         default:
             break;
     }

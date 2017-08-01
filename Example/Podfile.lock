@@ -5,7 +5,9 @@ PODS:
     - DLKit/Classes/Assist (= 0.3.2)
     - DLKit/Classes/Base (= 0.3.2)
   - DLKit/Classes/Assist (0.3.2):
+    - DLKit/Classes/Assist/AOPStastic (= 0.3.2)
     - DLKit/Classes/Assist/DLLog (= 0.3.2)
+  - DLKit/Classes/Assist/AOPStastic (0.3.2)
   - DLKit/Classes/Assist/DLLog (0.3.2):
     - DLKit/Classes/Base/DLUIKitExtended/NSDate
   - DLKit/Classes/Base (0.3.2):
@@ -54,7 +56,7 @@ PODS:
   - DLKit/Classes/Base/Encrypt/DESBase64 (0.3.2):
     - GTMBase64 (~> 1.0.0)
   - DLKit/Classes/Base/Storage (0.3.2)
-  - Expecta (1.0.5)
+  - Expecta (1.0.6)
   - Expecta+Snapshots (3.1.1):
     - Expecta (~> 1.0)
     - FBSnapshotTestCase/Core (~> 2.0)
@@ -79,8 +81,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DLKit: eb4abfdb12fd0dd14dba6c47adb5226f6c338905
-  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  DLKit: eb91a304744ae555bd966e999fd484720e84b417
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Expecta+Snapshots: dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   GTMBase64: 0da7372e95f5171f3f652db38cde6716f8eb5e24
