@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'DLKit_Example' do
   pod 'DLKit', :path => '../'
-
+  
   target 'DLKit_Tests' do
     inherit! :search_paths
 
@@ -11,4 +11,9 @@ target 'DLKit_Example' do
     pod 'FBSnapshotTestCase'
     pod 'Expecta+Snapshots'
   end
+end
+
+pre_install do |installer|
+    # workaround for https://github.com/CocoaPods/CocoaPods/issues/3289
+    def installer.verify_no_static_framework_transitive_dependencies; end
 end

@@ -115,6 +115,16 @@ Pod::Spec.new do |s|
       stastic.source_files = 'DLKit/Classes/Assist/Statistics/AOPStatistic/**/*'
       end
     end
+
+        classes.subspec 'Mobile' do |mo|
+        mo.subspec 'Cer' do |cer|
+        cer.source_files = 'DLKit/Classes/Moblie/Cer/**/*'
+        cer.dependency 'OpenSSL-iOS-lib', '~> 1.0.2l'
+        cer.pod_target_xcconfig = {
+          'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/OpenSSL-iOS-lib',
+        }
+        end
+      end
   end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
