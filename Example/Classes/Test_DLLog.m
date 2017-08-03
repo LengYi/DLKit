@@ -8,7 +8,6 @@
 
 #import "Test_DLLog.h"
 #import "DLLog.h"
-#import <openssl/x509.h>
 
 @implementation Test_DLLog
 + (void)test{

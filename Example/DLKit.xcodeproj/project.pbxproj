@@ -31,6 +31,7 @@
 		58854EC81F30275200531D61 /* Stastic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58854EC71F30275200531D61 /* Stastic.plist */; };
 		58854ED41F30335000531D61 /* AOPStatistic+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = 58854ED31F30335000531D61 /* AOPStatistic+Handler.m */; };
 		58854ED71F305D7200531D61 /* StatisticViewControllerC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58854ED61F305D7200531D61 /* StatisticViewControllerC.m */; };
+		588551BC1F33438400531D61 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588551BB1F33438400531D61 /* Security.framework */; };
 		588DF5B11EBC190600A90CCC /* Test_DLKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DF5B01EBC190600A90CCC /* Test_DLKeyChain.m */; };
 		5891BF2A1EADC8790014010D /* Test_DLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891BF291EADC8790014010D /* Test_DLProtocol.m */; };
 		58B06BFE1E83D2C900C2C661 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B06BFD1E83D2C900C2C661 /* AdSupport.framework */; };
@@ -116,6 +117,7 @@
 		58854ED31F30335000531D61 /* AOPStatistic+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AOPStatistic+Handler.m"; sourceTree = "<group>"; };
 		58854ED51F305D7200531D61 /* StatisticViewControllerC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticViewControllerC.h; sourceTree = "<group>"; };
 		58854ED61F305D7200531D61 /* StatisticViewControllerC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticViewControllerC.m; sourceTree = "<group>"; };
+		588551BB1F33438400531D61 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		588DF5AF1EBC190600A90CCC /* Test_DLKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_DLKeyChain.h; sourceTree = "<group>"; };
 		588DF5B01EBC190600A90CCC /* Test_DLKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_DLKeyChain.m; sourceTree = "<group>"; };
 		5891BF281EADC8790014010D /* Test_DLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_DLProtocol.h; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588551BC1F33438400531D61 /* Security.framework in Frameworks */,
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -301,6 +304,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				588551BB1F33438400531D61 /* Security.framework */,
 				58B06BFD1E83D2C900C2C661 /* AdSupport.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
