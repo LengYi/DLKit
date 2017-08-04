@@ -169,11 +169,12 @@
               "source_files": "DLKit/Classes/Moblie/Cer/**/*",
               "dependencies": {
                 "OpenSSL-iOS-lib": [
-                  "~> 1.0.2l"
+                  "~> 1.0.2l.01"
                 ]
               },
               "pod_target_xcconfig": {
-                "FRAMEWORK_SEARCH_PATHS": "$(inherited) $(PODS_ROOT)/OpenSSL-iOS-lib"
+                "FRAMEWORK_SEARCH_PATHS": "$(inherited) $(PODS_ROOT)/OpenSSL-iOS-lib/",
+                "OTHER_LDFLAGS": "$(inherited) -undefined dynamic_lookup"
               }
             }
           ]

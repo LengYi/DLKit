@@ -308,9 +308,9 @@
 		0DB7792F4255C8C1D4E0CA647A9F64BC /* UIDevice+extended.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+extended.m"; sourceTree = "<group>"; };
 		0ED50BF57175017C96A335CEEC3BB8AF /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "Expecta/Matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
 		0F1B4AF37E79F00B644A38451650FEB0 /* NSObject+Swizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
-		116F6285702BAA38AB5B4D0E0893CCEB /* Expecta_Snapshots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Expecta_Snapshots.framework; path = "Expecta+Snapshots.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		116F6285702BAA38AB5B4D0E0893CCEB /* Expecta_Snapshots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta_Snapshots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12828BEF97DA11C07D678B50B3E02815 /* Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Specta.h; path = Specta/Specta/Specta.h; sourceTree = "<group>"; };
-		1433A66CFA886C0056D9329C5157B75F /* Pods-DLKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DLKit_Tests.modulemap"; sourceTree = "<group>"; };
+		1433A66CFA886C0056D9329C5157B75F /* Pods-DLKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DLKit_Tests.modulemap"; sourceTree = "<group>"; };
 		17A9D5DEFF90A58F1745D0D62F38230F /* NSArray+Safe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
 		18C749883D1B448C8BCBA2F621DC09AE /* SpectaDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaDSL.h; path = Specta/Specta/SpectaDSL.h; sourceTree = "<group>"; };
 		198CBFA239C778B3ED128918632B0407 /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
@@ -328,7 +328,7 @@
 		2A91689B8C1F22993638CA7BFB40D29E /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
 		2ABD6CCD1F348D6DD7A698C332FB4E4E /* NSObject+DataException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DataException.m"; sourceTree = "<group>"; };
 		2B15CEB42AC66DEABCC2D28CE9378885 /* XCTestCase+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+Specta.m"; path = "Specta/Specta/XCTestCase+Specta.m"; sourceTree = "<group>"; };
-		2C3AA2CB557D48D29009011F8A4EBA9B /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C3AA2CB557D48D29009011F8A4EBA9B /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5A9E43A013024FF5D48274388BFA81 /* DLKeyChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DLKeyChain.m; sourceTree = "<group>"; };
 		2D09EFD46B3E627EF28CE4F25ED983FF /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
 		2D198C40E2EA73CF4AFB0FAACA7B721C /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
@@ -339,7 +339,7 @@
 		329E4EDAA5B7D533CD9AACF8C7812049 /* EXPMatchers+contain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+contain.m"; path = "Expecta/Matchers/EXPMatchers+contain.m"; sourceTree = "<group>"; };
 		35826A93D8BBA52E38E6032D69A349EC /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
 		35D4B82905C9AAF198114FD48DE403BA /* UIDevice+extended.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDevice+extended.h"; sourceTree = "<group>"; };
-		370D3540F8791A7FCBE65E4F18168A3F /* Pods-DLKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DLKit_Example.modulemap"; sourceTree = "<group>"; };
+		370D3540F8791A7FCBE65E4F18168A3F /* Pods-DLKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DLKit_Example.modulemap"; sourceTree = "<group>"; };
 		38D3DDD5CC30C0270257DFBBC51F2EB2 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
 		38F62C60712F724D308FCFEF96A9D703 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A0B91F7C66B642240BD208CE5F8222D /* NSDate+Extended.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extended.h"; sourceTree = "<group>"; };
@@ -382,14 +382,14 @@
 		5F0360BAAEB8C93BAB9713504ABBEB01 /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
 		5F0F2B74C540598B0DABE47EA8636CFA /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
 		6002BDB93ED7F328FCD2F26FD70EBE39 /* SPTExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExample.m; path = Specta/Specta/SPTExample.m; sourceTree = "<group>"; };
-		6037732C35FAD913C382765916D6E9FB /* Specta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Specta.modulemap; sourceTree = "<group>"; };
+		6037732C35FAD913C382765916D6E9FB /* Specta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Specta.modulemap; sourceTree = "<group>"; };
 		6165EA32B50E9C2728609BF1FCACDFB9 /* DLKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLKit-prefix.pch"; sourceTree = "<group>"; };
 		62A40A96CD656996BD85BE0F01156374 /* Pods-DLKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DLKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		62FF787CD5925C449287C5D3132F3093 /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
-		63310E0FA74AC8DFED5687C0D8A687DD /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Specta.framework; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63310E0FA74AC8DFED5687C0D8A687DD /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6367702A0F21B391D928B319D7FE74D1 /* DLHttp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DLHttp.m; sourceTree = "<group>"; };
 		639CC88481C95729F60ABAB0553CA3B9 /* GTMBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMBase64.m; path = GTMBase64/GTMBase64.m; sourceTree = "<group>"; };
-		64040A10B6CD9560939069B732D48C6A /* DLKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DLKit.modulemap; sourceTree = "<group>"; };
+		64040A10B6CD9560939069B732D48C6A /* DLKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DLKit.modulemap; sourceTree = "<group>"; };
 		65E6E30FB12272F68B75222CE41C15AD /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
 		6692AD312907DEACAEA54B2EA0E66673 /* NSString+Encrypto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encrypto.m"; sourceTree = "<group>"; };
 		66C6B5C65F071AF78BD4F88BCE500049 /* DLDocumentPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DLDocumentPath.m; sourceTree = "<group>"; };
@@ -433,7 +433,7 @@
 		8C5A1571C2ADBA0DC94223E8607C15B2 /* EXPMatchers+raise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raise.m"; path = "Expecta/Matchers/EXPMatchers+raise.m"; sourceTree = "<group>"; };
 		918C7200D1A3E09873F330D05BA2A6F1 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		92C7D5C2356835A4D31779070F809751 /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		971E27AFEE3CC470721D5A181AE381D2 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
 		97422D267CE07A02BB36059713C46B5D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9826184ECC2D10E1CE906F9F5BAB6763 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
@@ -460,23 +460,23 @@
 		AEE19151A6277815CDF07ED08E91EAD7 /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
 		B415C46D001B34F7F096101FCB926AEF /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
 		B42C5F7089D6E1515FE9AA6783012578 /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
-		B5B2358601E2F5799CD113AAEE4977A5 /* DLKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLKit.framework; path = DLKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B2358601E2F5799CD113AAEE4977A5 /* DLKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70466968726A4075F99823749CDC70C /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = Expecta/Matchers/EXPMatcherHelpers.h; sourceTree = "<group>"; };
 		B823832F3B25F1AC8A9C2CD3A87901CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B818A77CD3E31FD20D367D591E0061 /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
 		BA9596168D2DB84EAE109C028D151CC5 /* Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Specta.xcconfig; sourceTree = "<group>"; };
-		BCE409AE28478FBCF5EE6D63CDDA5A2A /* Expecta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Expecta.modulemap; sourceTree = "<group>"; };
+		BCE409AE28478FBCF5EE6D63CDDA5A2A /* Expecta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Expecta.modulemap; sourceTree = "<group>"; };
 		BD3D9CD8AD6D20B185E425A88FBD86D0 /* NSObject+DataException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+DataException.h"; sourceTree = "<group>"; };
 		BF131A7F32302C290DBAEF7590B91F4F /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
 		BFCE8D2327601DDDE2308F118E6FCDA3 /* Expecta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Expecta.xcconfig; sourceTree = "<group>"; };
 		C0CA7705AB1209C0FCE81EBF9CCA5047 /* DLKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLKit-dummy.m"; sourceTree = "<group>"; };
-		C0E6E4DB2A797EAF5DDE14BC88626511 /* Pods_DLKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DLKit_Tests.framework; path = "Pods-DLKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E6E4DB2A797EAF5DDE14BC88626511 /* Pods_DLKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D7F78C4BAEC5C95189B12B16D85D84 /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
 		C3ED358D74E95A3C9516F9E21BE456F8 /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
 		C4AE2A137D1861C365CFBE3FB1B25A0E /* NSString+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		C6A92556DCFED1859FB6067156CF942B /* Expecta+Snapshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Expecta+Snapshots.xcconfig"; sourceTree = "<group>"; };
-		C735B76F4534CDB8A97081D6E5334F29 /* GTMBase64.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GTMBase64.modulemap; sourceTree = "<group>"; };
-		C9BFC23C21CD14E6AF23B1F43E4D1E46 /* Pods_DLKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DLKit_Example.framework; path = "Pods-DLKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C735B76F4534CDB8A97081D6E5334F29 /* GTMBase64.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GTMBase64.modulemap; sourceTree = "<group>"; };
+		C9BFC23C21CD14E6AF23B1F43E4D1E46 /* Pods_DLKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA821781F5839898F062CCB3EBFADC1A /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
 		CB25AEA16F3BC6102AB1665159628006 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
 		CBEC0B64933B1B37C0199E3F5CE1D8CD /* EXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = Expecta/EXPDefines.h; sourceTree = "<group>"; };
@@ -507,7 +507,7 @@
 		E4488E07527F406405F79A11C725E13C /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66F74333BA2423059E8E7C2C141A8BB /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		E756A06F7F483DF8A32AD203EFC9ED12 /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7652EA0A129D8FB7A3FEDE842EACA88 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Expecta.framework; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7652EA0A129D8FB7A3FEDE842EACA88 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E845734B5E03BA2407232485544B87A5 /* Pods-DLKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DLKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		EAA30833E4739BF99C6A1D34966D65E7 /* NSArray+Safe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
 		EAF73D5D373B04F08744D6EFAF1E07E4 /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
@@ -515,11 +515,11 @@
 		EE20CD33C8D011C918E47D749FE95575 /* Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Expecta-dummy.m"; sourceTree = "<group>"; };
 		EFC4B814E6DD10E16CF21D573D10690D /* NSData+Extended.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extended.m"; sourceTree = "<group>"; };
 		F03848DEA6639EB9C77AF2AD742F7D9C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		F0878110DC290233D5B613D90E219C86 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		F0878110DC290233D5B613D90E219C86 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		F17A36EE4537662D4582515AF6AF540D /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
 		F3045F087424FA8752249A59DB2991FD /* EXPFloatTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPFloatTuple.m; path = Expecta/EXPFloatTuple.m; sourceTree = "<group>"; };
 		F32A876A94228337BE6EFEC99074736B /* Pods-DLKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DLKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F363F9E484957EB20636A420FFF9620A /* Expecta+Snapshots.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Expecta+Snapshots.modulemap"; sourceTree = "<group>"; };
+		F363F9E484957EB20636A420FFF9620A /* Expecta+Snapshots.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Expecta+Snapshots.modulemap"; sourceTree = "<group>"; };
 		F47F5E8B04B9A8B8B83AC8318959F13A /* DLDocumentPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DLDocumentPath.h; sourceTree = "<group>"; };
 		F5A6BBB1DEE9B299AA7619C83975365A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6DBF743A52C2C337C61400D69AB2936 /* DLCerAnalyze.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DLCerAnalyze.m; sourceTree = "<group>"; };
@@ -530,7 +530,7 @@
 		F9DF9105C76E035DD51B6F5D95429653 /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
 		FB6BCC3FC78B70D2A57F3D662C10A456 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB78B886D8A3E26B53B16EAB0F366E93 /* ExpectaObject+FBSnapshotTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpectaObject+FBSnapshotTest.h"; sourceTree = "<group>"; };
-		FB8ECDC923438B42179D26BF88FF52B8 /* GTMBase64.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GTMBase64.framework; path = GTMBase64.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8ECDC923438B42179D26BF88FF52B8 /* GTMBase64.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTMBase64.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCF44C8D3DBBB288216EABB6CE12E56 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		FC22AAD3C0506617BC2FC76BA5490065 /* GTMBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMBase64.h; path = GTMBase64/GTMBase64.h; sourceTree = "<group>"; };
 		FC8828A43B1A472C7CD32F2852814638 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
@@ -625,7 +625,6 @@
 			children = (
 				A239434CC16273A39BF895DFFB057C4A /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -634,7 +633,6 @@
 			children = (
 				2DD5AF241D72146740E14ECC8B6A73C7 /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -643,7 +641,6 @@
 			children = (
 				27547CF7B906728F310DCBB139B42914 /* DLUIKitSafeExtended */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -652,7 +649,6 @@
 			children = (
 				D5B10AF44AD3C7E0FF2402517FB2BB85 /* App */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -661,7 +657,6 @@
 			children = (
 				31347DD32DCCB539AC396C8C2C2F2AB7 /* DLUIKitExtended */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -670,7 +665,6 @@
 			children = (
 				F0B1B424C194A2E668EA6B4D047B73DA /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -702,7 +696,6 @@
 			children = (
 				D39C2949573E1971C3B8DF0B53A8B3EF /* AOPStatistic */,
 			);
-			name = Statistics;
 			path = Statistics;
 			sourceTree = "<group>";
 		};
@@ -728,7 +721,6 @@
 			children = (
 				C174C317D66ABA2347B10FBB7C614222 /* DLHttp */,
 			);
-			name = DLNet;
 			path = DLNet;
 			sourceTree = "<group>";
 		};
@@ -737,7 +729,6 @@
 			children = (
 				CE170EB241760029E8CDFC2670159E5E /* Assist */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -746,7 +737,6 @@
 			children = (
 				5CAEE56E21D1B93BCC1BC9CFFABC8335 /* DLUIKitExtended */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -758,7 +748,6 @@
 				7F3161FAFC64A11B99641BD1B85F29B2 /* NSString+Extension.h */,
 				C4AE2A137D1861C365CFBE3FB1B25A0E /* NSString+Extension.m */,
 			);
-			name = NSString;
 			path = NSString;
 			sourceTree = "<group>";
 		};
@@ -768,7 +757,6 @@
 				38D3DDD5CC30C0270257DFBBC51F2EB2 /* NSMutableDictionary+Safe.h */,
 				6910F88BDDCD80A32B1F4006D226E641 /* NSMutableDictionary+Safe.m */,
 			);
-			name = NSMutableDictionary;
 			path = NSMutableDictionary;
 			sourceTree = "<group>";
 		};
@@ -777,7 +765,6 @@
 			children = (
 				454CD455FE227552260151FE98269EF8 /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -786,7 +773,6 @@
 			children = (
 				3291A5E45AFCB9F6E8E13BF25C3F5B8F /* DLNet */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -811,7 +797,6 @@
 			children = (
 				CB6BCCDFBC85E6FAA5E91E74216C581D /* Statistics */,
 			);
-			name = Assist;
 			path = Assist;
 			sourceTree = "<group>";
 		};
@@ -820,7 +805,6 @@
 			children = (
 				FD4AA897A9D1EFDE8187CB24D4A5A515 /* NSMutableArray */,
 			);
-			name = DLUIKitSafeExtended;
 			path = DLUIKitSafeExtended;
 			sourceTree = "<group>";
 		};
@@ -829,7 +813,6 @@
 			children = (
 				F1CA968687811E6E09F495D01B2A0922 /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -838,7 +821,6 @@
 			children = (
 				0532603103BCC93B094AF8FD2C7AC326 /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -847,7 +829,6 @@
 			children = (
 				F56AD5E5F7CB9B41C0E5630EA9E06475 /* DLPath */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -864,7 +845,6 @@
 			children = (
 				1EA82A2F32F125A7BDFF19AD9050747E /* NSString */,
 			);
-			name = DLUIKitExtended;
 			path = DLUIKitExtended;
 			sourceTree = "<group>";
 		};
@@ -873,7 +853,6 @@
 			children = (
 				AA2003D311F7DECDC808191966C42927 /* DLUIKitExtended */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -882,7 +861,6 @@
 			children = (
 				DA93DD3DEFCBFE386979BDD5CFEA5C36 /* Encrypt */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -891,7 +869,6 @@
 			children = (
 				08C14BF4AA8269D14A0584C2DEC4ACDE /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -900,7 +877,6 @@
 			children = (
 				73EA1C8F90782312DBC9A80526AE2354 /* NSObject */,
 			);
-			name = DLUIKitExtended;
 			path = DLUIKitExtended;
 			sourceTree = "<group>";
 		};
@@ -910,7 +886,6 @@
 				D3AAA0A7172EF2CA8C0125FF5B8DF049 /* NSData+Extended.h */,
 				EFC4B814E6DD10E16CF21D573D10690D /* NSData+Extended.m */,
 			);
-			name = NSData;
 			path = NSData;
 			sourceTree = "<group>";
 		};
@@ -919,7 +894,6 @@
 			children = (
 				E20A352441F1DA14DAF194DB1B44B5AD /* DLDownloadFile */,
 			);
-			name = DLNet;
 			path = DLNet;
 			sourceTree = "<group>";
 		};
@@ -928,7 +902,6 @@
 			children = (
 				4FA3A58901276BCC1FD277FF49F38A30 /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -951,7 +924,6 @@
 			children = (
 				2C75CA857CA8EDCEACCF67C8FAB5956C /* Frameworks */,
 			);
-			name = "OpenSSL-iOS-lib";
 			path = "OpenSSL-iOS-lib";
 			sourceTree = "<group>";
 		};
@@ -960,7 +932,6 @@
 			children = (
 				4D9728EB719FFE2CDF1838F2A508DF56 /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1042,7 +1013,6 @@
 				A7A92EFA179B1375DC56112F5D7D0FF9 /* NSValue+Expecta.m */,
 				D40906C375CD8AD7FE6224D79B4413D4 /* Support Files */,
 			);
-			name = Expecta;
 			path = Expecta;
 			sourceTree = "<group>";
 		};
@@ -1051,7 +1021,6 @@
 			children = (
 				3057DA3900B46CAFF8D7A695436CD37A /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1060,7 +1029,6 @@
 			children = (
 				773AD1A90BF0C55D7DE302502F18E558 /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1069,7 +1037,6 @@
 			children = (
 				960122C04281B00C0FBE1DD658D271CB /* Device */,
 			);
-			name = DLUIKitExtended;
 			path = DLUIKitExtended;
 			sourceTree = "<group>";
 		};
@@ -1078,7 +1045,6 @@
 			children = (
 				190F1A8B1B924276D4901D6BA4AE563D /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1095,7 +1061,6 @@
 			children = (
 				55383F35762E7E52FE2B120AE54B3077 /* Moblie */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1122,7 +1087,6 @@
 			children = (
 				05ABCE70DDEF6EB1A56A41ECA0C98E17 /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1131,7 +1095,6 @@
 			children = (
 				1DCDFC311EE784874C04EE5F3BDBEC4C /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1148,7 +1111,6 @@
 			children = (
 				99D3894197AE0BF097E2500236256DBE /* Cer */,
 			);
-			name = Moblie;
 			path = Moblie;
 			sourceTree = "<group>";
 		};
@@ -1166,7 +1128,6 @@
 				9B1DE59CE394B9AFE3445BD45CF8745B /* DLDESBase64.h */,
 				F8559A9AFE5BF08AF9EB795C6A7E217F /* DLDESBase64.m */,
 			);
-			name = DESBase64;
 			path = DESBase64;
 			sourceTree = "<group>";
 		};
@@ -1176,7 +1137,6 @@
 				882D5FF86DEA640F6F54D2C5BA2B016F /* NSURL+DLAdditions.h */,
 				80171B97035CE2A6DC7A1303993D7569 /* NSURL+DLAdditions.m */,
 			);
-			name = NSURL;
 			path = NSURL;
 			sourceTree = "<group>";
 		};
@@ -1207,7 +1167,6 @@
 			children = (
 				F84FB6C6611F27295972CA351EE37F96 /* NSDate */,
 			);
-			name = DLUIKitExtended;
 			path = DLUIKitExtended;
 			sourceTree = "<group>";
 		};
@@ -1216,7 +1175,6 @@
 			children = (
 				81003D05AB10569BF38AE7183AEBB1AB /* DLUIKitSafeExtended */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -1229,7 +1187,6 @@
 				AED028E423B6190F1E543582681A13B9 /* EXPMatchers+FBSnapshotTest.m */,
 				BE4382AD0D157D77B8BA849B1EB186C7 /* Support Files */,
 			);
-			name = "Expecta+Snapshots";
 			path = "Expecta+Snapshots";
 			sourceTree = "<group>";
 		};
@@ -1246,7 +1203,6 @@
 			children = (
 				C6FC46D3A9437C65D7C5768BBB1E455D /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1271,7 +1227,6 @@
 			children = (
 				5AFEDC009FF43168D05290F09BA6718F /* NSURL */,
 			);
-			name = DLUIKitExtended;
 			path = DLUIKitExtended;
 			sourceTree = "<group>";
 		};
@@ -1289,7 +1244,6 @@
 			children = (
 				91AA3DACE53F7456FB63DD13618BD6F9 /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1301,7 +1255,6 @@
 				77F5C859EB2FC53E031CA16CF1B33FB5 /* NSObject+Swizzle.h */,
 				0F1B4AF37E79F00B644A38451650FEB0 /* NSObject+Swizzle.m */,
 			);
-			name = NSObject;
 			path = NSObject;
 			sourceTree = "<group>";
 		};
@@ -1310,7 +1263,6 @@
 			children = (
 				C954194EE255134ED2497FA93578F025 /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1319,7 +1271,6 @@
 			children = (
 				29B723A264B388A3FF475ADAC0A0BF33 /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1348,7 +1299,6 @@
 			children = (
 				2101FEE9BADEE5F956D356C88AF728B7 /* NSMutableDictionary */,
 			);
-			name = DLUIKitSafeExtended;
 			path = DLUIKitSafeExtended;
 			sourceTree = "<group>";
 		};
@@ -1357,7 +1307,6 @@
 			children = (
 				C93F7BA1C3DF16BED01F60F799C56DB2 /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1378,7 +1327,6 @@
 			children = (
 				233425A31D234BE24D7CED64638CA082 /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1387,7 +1335,6 @@
 			children = (
 				D6CCA77AB4C367471918A37BEA508AB7 /* Encrypt */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -1399,7 +1346,6 @@
 				2146F554F70B3A4626E4291A842BD522 /* UIDevice+name.h */,
 				438920AB1901E1CCC2AC5E0005E44210 /* UIDevice+name.m */,
 			);
-			name = Device;
 			path = Device;
 			sourceTree = "<group>";
 		};
@@ -1408,7 +1354,6 @@
 			children = (
 				0A03C3D6A36759A4FB621ED2DF04798B /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1418,7 +1363,6 @@
 				4F8BAA5BEA262656FB9E47D48D6EFF24 /* DLCerAnalyze.h */,
 				F6DBF743A52C2C337C61400D69AB2936 /* DLCerAnalyze.m */,
 			);
-			name = Cer;
 			path = Cer;
 			sourceTree = "<group>";
 		};
@@ -1427,7 +1371,6 @@
 			children = (
 				D6CA5513572B603B9DA40BB8B90E4728 /* Storage */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -1446,7 +1389,6 @@
 				9AF4EA604D700667531A70088A3ADB8B /* DLAES128.h */,
 				76839F7DA44C2874E662D8AEC0A369EA /* DLAES128.m */,
 			);
-			name = AES128;
 			path = AES128;
 			sourceTree = "<group>";
 		};
@@ -1455,7 +1397,6 @@
 			children = (
 				06F418051E8A03B25AD1E1EF1AECCF3D /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1475,7 +1416,6 @@
 				7DB8E7B4159CB2898F120FDC0C05FFAD /* GTMDefines.h */,
 				351C186405853933559A771D8C68D0E3 /* Support Files */,
 			);
-			name = GTMBase64;
 			path = GTMBase64;
 			sourceTree = "<group>";
 		};
@@ -1484,7 +1424,6 @@
 			children = (
 				E22F5727E9E43BEC5526AB933353CBBE /* DLLog */,
 			);
-			name = Log;
 			path = Log;
 			sourceTree = "<group>";
 		};
@@ -1493,7 +1432,6 @@
 			children = (
 				31EEF80B0181365CCF7D081210375609 /* NSData */,
 			);
-			name = DLUIKitExtended;
 			path = DLUIKitExtended;
 			sourceTree = "<group>";
 		};
@@ -1510,7 +1448,6 @@
 			children = (
 				F4427562929346FE4252FE045E70B04E /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1519,7 +1456,6 @@
 			children = (
 				26BDE0F2DEBF2C270C6277CAF2F32073 /* Assist */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1542,7 +1478,6 @@
 			children = (
 				2D17D0248CF1D58F8C8CDFD044E0146C /* DLUIKitExtended */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -1592,7 +1527,6 @@
 				2B15CEB42AC66DEABCC2D28CE9378885 /* XCTestCase+Specta.m */,
 				0A245C22501139778D8F83A00FEC2022 /* Support Files */,
 			);
-			name = Specta;
 			path = Specta;
 			sourceTree = "<group>";
 		};
@@ -1651,7 +1585,6 @@
 			children = (
 				9ACCA74F3AD9F1BAE17E4353303060F4 /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1661,7 +1594,6 @@
 				556C5AFFEE58603B6849DA2FE7FD2759 /* DLHttp.h */,
 				6367702A0F21B391D928B319D7FE74D1 /* DLHttp.m */,
 			);
-			name = DLHttp;
 			path = DLHttp;
 			sourceTree = "<group>";
 		};
@@ -1695,7 +1627,6 @@
 			children = (
 				BF26D4FF94C5ED529C2A3EE7724BB0BD /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1704,7 +1635,6 @@
 			children = (
 				2DA7347A665A158F13C8365C3B4E2E60 /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1713,7 +1643,6 @@
 			children = (
 				5DB78B55B8B6638C95EFE63E0031B0C9 /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1730,7 +1659,6 @@
 			children = (
 				C63E3AF3CD806CB7BAF095AAD3B02533 /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1739,7 +1667,6 @@
 			children = (
 				F22556B3C5E677577AAF2E56B54C11BA /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1748,7 +1675,6 @@
 			children = (
 				D13D9BD7F1D7100349E0485D784CAE7D /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1767,7 +1693,6 @@
 			children = (
 				B2C33F164EC0744D018DEDA79D9D7D4A /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1776,7 +1701,6 @@
 			children = (
 				A842547D106D6EE2B9AA121973046293 /* Log */,
 			);
-			name = Statistics;
 			path = Statistics;
 			sourceTree = "<group>";
 		};
@@ -1785,7 +1709,6 @@
 			children = (
 				0AAEF0F86805353D7CA486FFFC220D41 /* Statistics */,
 			);
-			name = Assist;
 			path = Assist;
 			sourceTree = "<group>";
 		};
@@ -1794,7 +1717,6 @@
 			children = (
 				3A7600D7DA93A308356544DA61A99BAF /* DLUIKitExtended */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -1827,7 +1749,6 @@
 				CCB2C03A19D0F70710BA0DF06B8DE4CF /* DLAspects.h */,
 				D03581D68FB33946C06E853DC8D5FD05 /* DLSAspects.m */,
 			);
-			name = AOPStatistic;
 			path = AOPStatistic;
 			sourceTree = "<group>";
 		};
@@ -1859,7 +1780,6 @@
 				40DE175F65FF2097D17D5F7D42B2C2C7 /* DLAppInfo.h */,
 				485B340A20FD94A3E1E016E36B00FD18 /* DLAppInfo.m */,
 			);
-			name = App;
 			path = App;
 			sourceTree = "<group>";
 		};
@@ -1868,7 +1788,6 @@
 			children = (
 				C9A95F4CF5CB91A4975CC81A09E70A85 /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1877,7 +1796,6 @@
 			children = (
 				DE3AEFE4C312F83721EDDB8FA1B31AEF /* KeyChain */,
 			);
-			name = Storage;
 			path = Storage;
 			sourceTree = "<group>";
 		};
@@ -1886,7 +1804,6 @@
 			children = (
 				5A3EB1F3100EEC65B153BB9950793F63 /* DESBase64 */,
 			);
-			name = Encrypt;
 			path = Encrypt;
 			sourceTree = "<group>";
 		};
@@ -1895,7 +1812,6 @@
 			children = (
 				ACE504369A910E0F7D410AF07C774449 /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1904,7 +1820,6 @@
 			children = (
 				A1CB96C6BC03079AEE00A3ABC25D8DEC /* AES128 */,
 			);
-			name = Encrypt;
 			path = Encrypt;
 			sourceTree = "<group>";
 		};
@@ -1913,7 +1828,6 @@
 			children = (
 				B1F80EA9BDB1EB5CF66709FA0047121D /* Classes */,
 			);
-			name = DLKit;
 			path = DLKit;
 			sourceTree = "<group>";
 		};
@@ -1931,7 +1845,6 @@
 				309F0B627107418FA6C890D18FFA0DBC /* DLKeyChain.h */,
 				2C5A9E43A013024FF5D48274388BFA81 /* DLKeyChain.m */,
 			);
-			name = KeyChain;
 			path = KeyChain;
 			sourceTree = "<group>";
 		};
@@ -1941,7 +1854,6 @@
 				F981D9C257DCA8AFC72055C69ACBC44A /* DLDownloadFile.h */,
 				A854DFA3936A4AB796045634076A2FD5 /* DLDownloadFile.m */,
 			);
-			name = DLDownloadFile;
 			path = DLDownloadFile;
 			sourceTree = "<group>";
 		};
@@ -1951,7 +1863,6 @@
 				319A4E6E5A50B76BAEF883317259CBD7 /* DLLog.h */,
 				FDD0F184340002021B3FBCB9F28D9094 /* DLLog.m */,
 			);
-			name = DLLog;
 			path = DLLog;
 			sourceTree = "<group>";
 		};
@@ -1970,7 +1881,6 @@
 				5C45586BBF242C2069F7DC599FABD6B2 /* Support Files */,
 				6B332BD14368339F64D53640B1F11FF8 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -1979,7 +1889,6 @@
 			children = (
 				190308D1DA72E0A438882FE19430AA5D /* DLNet */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -1988,7 +1897,6 @@
 			children = (
 				92FF28350BF7B323B09DF90F409F5E79 /* Base */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -1997,7 +1905,6 @@
 			children = (
 				F9BA4EDCB25296BAE9355FE567E0FBA1 /* DLData */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -2024,7 +1931,6 @@
 			children = (
 				6FC88B6550F5FF2E16DAB5B981132A96 /* DLUIKitExtended */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -2050,7 +1956,6 @@
 				F47F5E8B04B9A8B8B83AC8318959F13A /* DLDocumentPath.h */,
 				66C6B5C65F071AF78BD4F88BCE500049 /* DLDocumentPath.m */,
 			);
-			name = DLPath;
 			path = DLPath;
 			sourceTree = "<group>";
 		};
@@ -2081,7 +1986,6 @@
 				3A0B91F7C66B642240BD208CE5F8222D /* NSDate+Extended.h */,
 				CF101ADF113A55F95F39B52B79FF7056 /* NSDate+Extended.m */,
 			);
-			name = NSDate;
 			path = NSDate;
 			sourceTree = "<group>";
 		};
@@ -2108,7 +2012,6 @@
 				6FC73DFC86DBCFA85D3FCFE88EB6BD25 /* DLProtocolPackage.h */,
 				5776C68698D8FAB704B29EBBFCB8059A /* DLProtocolPackage.m */,
 			);
-			name = DLData;
 			path = DLData;
 			sourceTree = "<group>";
 		};
@@ -2120,7 +2023,6 @@
 				C3ED358D74E95A3C9516F9E21BE456F8 /* NSMutableArray+Safe.h */,
 				971E27AFEE3CC470721D5A181AE381D2 /* NSMutableArray+Safe.m */,
 			);
-			name = NSMutableArray;
 			path = NSMutableArray;
 			sourceTree = "<group>";
 		};
@@ -2733,6 +2635,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DLKit/DLKit-prefix.pch";
@@ -2839,6 +2742,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DLKit/DLKit-prefix.pch";
