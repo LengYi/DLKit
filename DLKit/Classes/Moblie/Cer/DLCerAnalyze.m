@@ -16,22 +16,6 @@
 @implementation DLCerAnalyze
 #pragma mark - PublicMethod
 
-+ (instancetype)shareinstance{
-    static DLCerAnalyze *analyze = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        if (!analyze) {
-            analyze = [[DLCerAnalyze alloc] init];
-        }
-    });
-    
-    return analyze;
-}
-
-+ (void)configPath:(NSString *)path{
-    
-}
-
 + (NSDictionary *)getMobileProvision{
     NSString *filePath = [self provisionPath];
     return [self getMobileProvisionWithPath:filePath];
@@ -122,33 +106,33 @@
 + (NSDate *)cerExpireTime{
     NSDate *date = [[NSDate alloc] init];
     NSDictionary *dic = [self getMobileProvision];
-    //    if (dic) {
-    //        X509 *x509Cer;
-    //
-    //        NSArray * cerDataArray = dic[@"DeveloperCertificates"];
-    //        if (cerDataArray) {
-    //            for (NSData *cerData in cerDataArray) {
-    //                x509Cer = [self cerDataFormateToX509:cerData];
-    //                if (x509Cer) {
-    //                    ASN1_TIME *end = NULL;
-    //                    time_t ttEnd = {0};
-    //
-    //                    // 过期时间
-    //                    end = X509_get_notAfter(x509Cer);
-    //                    ttEnd = [self skf_ext_ASN1_GetTimeT:end];
-    //                    ttEnd = ttEnd + 8 * 60 * 60;
-    //                    NSDate *endDate = [NSDate dateWithTimeIntervalSince1970:ttEnd];
-    //
-    //                    if (date) {
-    //                        date = [endDate laterDate:date];
-    //                    }else
-    //                    {
-    //                        date = endDate;
-    //                    }
-    //                }
-    //            }
-    //        }
-    //    }
+        if (dic) {
+            X509 *x509Cer;
+    
+            NSArray * cerDataArray = dic[@"DeveloperCertificates"];
+            if (cerDataArray) {
+                for (NSData *cerData in cerDataArray) {
+                    x509Cer = [self cerDataFormateToX509:cerData];
+                    if (x509Cer) {
+                        ASN1_TIME *end = NULL;
+                        time_t ttEnd = {0};
+    
+                        // 过期时间
+                        end = X509_get_notAfter(x509Cer);
+                        ttEnd = [self skf_ext_ASN1_GetTimeT:end];
+                        ttEnd = ttEnd + 8 * 60 * 60;
+                        NSDate *endDate = [NSDate dateWithTimeIntervalSince1970:ttEnd];
+    
+                        if (date) {
+                            date = [endDate laterDate:date];
+                        }else
+                        {
+                            date = endDate;
+                        }
+                    }
+                }
+            }
+        }
     
     return date;
 }

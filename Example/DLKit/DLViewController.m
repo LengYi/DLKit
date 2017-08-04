@@ -19,6 +19,7 @@
 #import "SafeExViewController.h"
 #import "EncryViewController.h"
 #import "StatisticViewController.h"
+#import "Test_DLCerAnalyze.h"
 
 @interface DLViewController ()<TBViewControllerDelegate>
 @property (nonatomic,strong) TBViewController *tbVC;
@@ -57,7 +58,8 @@
                                       @"UIKitSafeExtended",
                                       @"KeyChain 存储",
                                       @"Log日志",
-                                      @"AOP 打点统计"]];
+                                      @"AOP 打点统计",
+                                      @"mobileProvision证书解析"]];
     return dataArray;
 }
 
@@ -108,6 +110,10 @@
             StatisticViewController *vc = [[StatisticViewController alloc] init];
             vc.title = title;
             [_nav pushViewController:vc animated:NO];
+            break;
+        }
+        case 11:{
+            [Test_DLCerAnalyze test];
             break;
         }
         default:

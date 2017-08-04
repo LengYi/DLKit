@@ -9,5 +9,14 @@
 #import <Foundation/Foundation.h>
 
 @interface DLCerAnalyze : NSObject
++ (NSDictionary *)getMobileProvision;
+
++ (NSString *)teamName;
+
++ (NSString *)teamID;
+
++ (NSString *)provisionExpiredTime;
+
++ (NSDate *)cerExpireTime;
 
 @end

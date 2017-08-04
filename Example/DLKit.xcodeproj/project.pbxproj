@@ -32,6 +32,7 @@
 		58854ED41F30335000531D61 /* AOPStatistic+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = 58854ED31F30335000531D61 /* AOPStatistic+Handler.m */; };
 		58854ED71F305D7200531D61 /* StatisticViewControllerC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58854ED61F305D7200531D61 /* StatisticViewControllerC.m */; };
 		588551BC1F33438400531D61 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588551BB1F33438400531D61 /* Security.framework */; };
+		588551CF1F346E5F00531D61 /* Test_DLCerAnalyze.m in Sources */ = {isa = PBXBuildFile; fileRef = 588551CE1F346E5F00531D61 /* Test_DLCerAnalyze.m */; };
 		588DF5B11EBC190600A90CCC /* Test_DLKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DF5B01EBC190600A90CCC /* Test_DLKeyChain.m */; };
 		5891BF2A1EADC8790014010D /* Test_DLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891BF291EADC8790014010D /* Test_DLProtocol.m */; };
 		58B06BFE1E83D2C900C2C661 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B06BFD1E83D2C900C2C661 /* AdSupport.framework */; };
@@ -50,8 +51,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		60C2709B69F3DE4E8648637F /* Pods_DLKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A38884C4475B472723E9E1D /* Pods_DLKit_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		7368FE6825BA1E43B0505F03 /* Pods_DLKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE890C1438AD4562A9DC7E9 /* Pods_DLKit_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BA7C12C7299BE169EDDE36FA /* Pods_DLKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE890C1438AD4562A9DC7E9 /* Pods_DLKit_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,8 @@
 		58854ED51F305D7200531D61 /* StatisticViewControllerC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticViewControllerC.h; sourceTree = "<group>"; };
 		58854ED61F305D7200531D61 /* StatisticViewControllerC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticViewControllerC.m; sourceTree = "<group>"; };
 		588551BB1F33438400531D61 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		588551CD1F346E5F00531D61 /* Test_DLCerAnalyze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_DLCerAnalyze.h; sourceTree = "<group>"; };
+		588551CE1F346E5F00531D61 /* Test_DLCerAnalyze.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_DLCerAnalyze.m; sourceTree = "<group>"; };
 		588DF5AF1EBC190600A90CCC /* Test_DLKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_DLKeyChain.h; sourceTree = "<group>"; };
 		588DF5B01EBC190600A90CCC /* Test_DLKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_DLKeyChain.m; sourceTree = "<group>"; };
 		5891BF281EADC8790014010D /* Test_DLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_DLProtocol.h; sourceTree = "<group>"; };
@@ -159,7 +162,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				7368FE6825BA1E43B0505F03 /* Pods_DLKit_Example.framework in Frameworks */,
+				BA7C12C7299BE169EDDE36FA /* Pods_DLKit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +240,7 @@
 		587563FC1EA86601001D6B97 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				588551CC1F346E4400531D61 /* MobileCer */,
 				58854EBD1F30225B00531D61 /* Log */,
 				585539451F271F3B004B9E84 /* EncryAndDecry */,
 				585539411F271D72004B9E84 /* SafeExtended */,
@@ -277,6 +281,15 @@
 				58854ED61F305D7200531D61 /* StatisticViewControllerC.m */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		588551CC1F346E4400531D61 /* MobileCer */ = {
+			isa = PBXGroup;
+			children = (
+				588551CD1F346E5F00531D61 /* Test_DLCerAnalyze.h */,
+				588551CE1F346E5F00531D61 /* Test_DLCerAnalyze.m */,
+			);
+			path = MobileCer;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
@@ -593,6 +606,7 @@
 				582019481EFCEB55004CA051 /* Test_DLLog.m in Sources */,
 				585539481F271F4C004B9E84 /* EncryViewController.m in Sources */,
 				5855395C1F272341004B9E84 /* Test_NSURLEx.m in Sources */,
+				588551CF1F346E5F00531D61 /* Test_DLCerAnalyze.m in Sources */,
 				588DF5B11EBC190600A90CCC /* Test_DLKeyChain.m in Sources */,
 				5875642E1EA8C15A001D6B97 /* Test_DLDocumentPath.m in Sources */,
 				5855395B1F272341004B9E84 /* Test_NSDataEx.m in Sources */,
@@ -741,6 +755,7 @@
 				GCC_PREFIX_HEADER = "DLKit/DLKit-Prefix.pch";
 				INFOPLIST_FILE = "DLKit/DLKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ice111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -766,6 +781,7 @@
 				GCC_PREFIX_HEADER = "DLKit/DLKit-Prefix.pch";
 				INFOPLIST_FILE = "DLKit/DLKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ice111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
