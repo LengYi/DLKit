@@ -1,8 +1,8 @@
 {
   "name": "DLKit",
-  "version": "0.3.2",
+  "version": "0.3.4",
   "summary": "构建App常用的基本功能库",
-  "description": "Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器,网络数据打包解析,UIKitExtened,KeyChain数据存储",
+  "description": "Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器,网络数据打包解析,UIKitExtened,KeyChain数据存储,AOP打点统计子系统,Http网络请求数据拦截修改管理子系统",
   "homepage": "https://github.com/LengYi/DLKit",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/LengYi/DLKit.git",
-    "tag": "0.3.2"
+    "tag": "0.3.4"
   },
   "platforms": {
     "ios": "8.0"
@@ -158,6 +158,15 @@
             {
               "name": "AOPStastic",
               "source_files": "DLKit/Classes/Assist/Statistics/AOPStatistic/**/*"
+            },
+            {
+              "name": "HttpMock",
+              "source_files": "DLKit/Classes/Assist/HttpMock/**/*",
+              "dependencies": {
+                "GYHttpMock": [
+                  "~> 1.0.1"
+                ]
+              }
             }
           ]
         }

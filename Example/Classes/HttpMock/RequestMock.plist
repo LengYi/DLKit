@@ -1,0 +1,27 @@
+{
+	Test = {
+		url = "http://data.idown.hk/tuiexe/sku.aspx";
+		method = GET;
+		response = {
+			sex = meal;
+			age = 24;
+			info = "Hello I'm a Good iOS developer!!!";
+		};
+		isMock = YES;
+	};
+	Search = {
+		url = "/china/abc.php";
+		method = POST;
+		headers = {};
+		body = {
+			age = 23;
+			sex = male;
+			name = Tom;
+		};
+		response = {
+			info = "I'm a iOS developer";
+			age = 100;
+		};
+		isMock = YES;
+	};
+}
