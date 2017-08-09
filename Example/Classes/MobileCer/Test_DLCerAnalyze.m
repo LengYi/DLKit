@@ -14,7 +14,8 @@
 + (void)test{
     NSLog(@"证书内容:\n %@\n 证书名称: %@\n 证书ID: %@\n provisionExpTime = %@ \n cerExpireTime = \n",[DLCerAnalyze getMobileProvision],[DLCerAnalyze teamName],[DLCerAnalyze teamID],[DLCerAnalyze provisionExpiredTime]);
     
-    [DLCerAnalyze cerExpireTime];
+    NSDate *date = [DLCerAnalyze cerExpireTime];
+    NSLog(@"1111 %@",date);
 }
 
 @end
