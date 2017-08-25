@@ -88,7 +88,7 @@ NSString const *DLTargetKey     =   @"Target";
 /**
  *  统计事件处理接口,外部通过类别重载覆盖当前方法进行处理
  *
- *  @param data    @param data   被处理的数据对象及方法、参数
+ *  @param data    被处理的数据对象及方法、参数
  *  @param eventId 页面事件ID
  *  @param callBackDic  返回配置原始数据,可以添加任何数据,例如 添加MethodID 用于判断不同的方法
  */

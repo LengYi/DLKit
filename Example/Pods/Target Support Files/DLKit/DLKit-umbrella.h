@@ -30,6 +30,8 @@
 #import "DLAES128.h"
 #import "DLDESBase64.h"
 #import "DLKeyChain.h"
+#import "ADCircleBannerView.h"
+#import "SMPageControl.h"
 
 FOUNDATION_EXPORT double DLKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char DLKitVersionString[];

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.3.4'
+  s.version          = '0.3.5'
   s.summary          = '构建App常用的基本功能库'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-   Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器,网络数据打包解析,UIKitExtened,KeyChain数据存储,AOP打点统计子系统,Http网络请求数据拦截修改管理子系统
+   Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器,网络数据打包解析,UIKitExtened,KeyChain数据存储,AOP打点统计子系统,Http网络请求数据拦截修改管理子系统,
+   广告无限自动循环轮播组件
                        DESC
 
   s.homepage         = 'https://github.com/LengYi/DLKit'
@@ -120,6 +121,13 @@ Pod::Spec.new do |s|
         mock.dependency 'GYHttpMock', '~> 1.0.1'
       end
     end
+
+
+    classes.subspec 'ViewComponent' do |component|
+      component.subspec 'CircleBanner' do |circleBanner|
+        circleBanner.source_files = 'DLKit/Classes/ViewComponent/ADCircleBanner/**/*'
+       end
+    end 
   end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

@@ -20,6 +20,7 @@
 #import "EncryViewController.h"
 #import "StatisticViewController.h"
 #import "MockViewController.h"
+#import "ComponentRootViewController.h"
 
 @interface DLViewController ()<TBViewControllerDelegate>
 @property (nonatomic,strong) TBViewController *tbVC;
@@ -59,7 +60,8 @@
                                       @"KeyChain 存储",
                                       @"Log日志",
                                       @"AOP 打点统计",
-                                      @"HttpMock"]];
+                                      @"HttpMock",
+                                      @"ViewComponent"]];
     return dataArray;
 }
 
@@ -114,6 +116,12 @@
         }
         case 11:{
             MockViewController *vc = [[MockViewController alloc] init];
+            vc.title = title;
+            [_nav pushViewController:vc animated:NO];
+            break;
+        }
+        case 12:{
+            ComponentRootViewController *vc = [[ComponentRootViewController alloc] init];
             vc.title = title;
             [_nav pushViewController:vc animated:NO];
             break;
