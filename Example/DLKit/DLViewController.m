@@ -21,6 +21,7 @@
 #import "StatisticViewController.h"
 #import "MockViewController.h"
 #import "ComponentRootViewController.h"
+#import "VendorsRootViewController.h"
 
 @interface DLViewController ()<TBViewControllerDelegate>
 @property (nonatomic,strong) TBViewController *tbVC;
@@ -61,7 +62,8 @@
                                       @"Log日志",
                                       @"AOP 打点统计",
                                       @"HttpMock",
-                                      @"ViewComponent"]];
+                                      @"ViewComponent",
+                                      @"Vendors"]];
     return dataArray;
 }
 
@@ -122,6 +124,12 @@
         }
         case 12:{
             ComponentRootViewController *vc = [[ComponentRootViewController alloc] init];
+            vc.title = title;
+            [_nav pushViewController:vc animated:NO];
+            break;
+        }
+        case 13:{
+            VendorsRootViewController *vc = [[VendorsRootViewController alloc] init];
             vc.title = title;
             [_nav pushViewController:vc animated:NO];
             break;

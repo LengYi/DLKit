@@ -87,9 +87,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/DLKit/DLKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/GTMBase64/GTMBase64.framework"
   install_framework "$BUILT_PRODUCTS_DIR/GYHttpMock/GYHttpMock.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SVPullToRefresh/SVPullToRefresh.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/DLKit/DLKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/GTMBase64/GTMBase64.framework"
   install_framework "$BUILT_PRODUCTS_DIR/GYHttpMock/GYHttpMock.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SVPullToRefresh/SVPullToRefresh.framework"
 fi

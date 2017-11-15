@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.3.5'
+  s.version          = '0.3.6'
   s.summary          = '构建App常用的基本功能库'
 
 # This description is used to generate tags and improve search results.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
    Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器,网络数据打包解析,UIKitExtened,KeyChain数据存储,AOP打点统计子系统,Http网络请求数据拦截修改管理子系统,
-   广告无限自动循环轮播组件
+   广告无限自动循环轮播组件,iOS常用宏,ViewController通用架构(Loading加载,网络异常,下拉上拉刷新)
                        DESC
 
   s.homepage         = 'https://github.com/LengYi/DLKit'
@@ -39,7 +39,11 @@ Pod::Spec.new do |s|
         info.source_files = 'DLKit/Classes/Base/App/**/*'
         info.public_header_files = 'DLKit/Classes/Base/App/**/*.h'
       end
-
+      
+      base.subspec 'Define' do |publedefine|
+        publedefine.source_files = 'DLKit/Classes/Base/Define/**/*'
+      end 
+        
       base.subspec 'DLNet' do |dlnet|
          dlnet.subspec 'DLDownloadFile' do |download|
            download.source_files = 'DLKit/Classes/Base/DLNet/DLDownloadFile/**/*'
@@ -47,6 +51,10 @@ Pod::Spec.new do |s|
          end
         dlnet.subspec 'DLHttp' do |http|
           http.source_files = 'DLKit/Classes/Base/DLNet/DLHttp/**/*'
+        end
+        dlnet.subspec 'DLNetReachability' do |reachable|
+          reachable.source_files = 'DLKit/Classes/Base/DLNet/DLNetReachability/**/*'
+          reachable.requires_arc = false
         end
        end 
 
@@ -128,6 +136,14 @@ Pod::Spec.new do |s|
         circleBanner.source_files = 'DLKit/Classes/ViewComponent/ADCircleBanner/**/*'
        end
     end 
+
+    classes.subspec 'Vendors' do |vendor|
+      vendor.subspec 'TablePullToRefresh' do |tableRefresh|
+        tableRefresh.source_files = 'DLKit/Classes/Vendors/TablePullToRefresh/**/*'
+        tableRefresh.dependency 'SVPullToRefresh','~> 0.4.1'
+      end
+    end
+    
   end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

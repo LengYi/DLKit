@@ -1,8 +1,8 @@
 {
   "name": "DLKit",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "summary": "构建App常用的基本功能库",
-  "description": "Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器,网络数据打包解析,UIKitExtened,KeyChain数据存储,AOP打点统计子系统,Http网络请求数据拦截修改管理子系统,\n广告无限自动循环轮播组件",
+  "description": "Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器,网络数据打包解析,UIKitExtened,KeyChain数据存储,AOP打点统计子系统,Http网络请求数据拦截修改管理子系统,\n广告无限自动循环轮播组件,iOS常用宏,ViewController通用架构(Loading加载,网络异常,下拉上拉刷新)",
   "homepage": "https://github.com/LengYi/DLKit",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/LengYi/DLKit.git",
-    "tag": "0.3.5"
+    "tag": "0.3.6"
   },
   "platforms": {
     "ios": "8.0"
@@ -37,6 +37,10 @@
               "public_header_files": "DLKit/Classes/Base/App/**/*.h"
             },
             {
+              "name": "Define",
+              "source_files": "DLKit/Classes/Base/Define/**/*"
+            },
+            {
               "name": "DLNet",
               "subspecs": [
                 {
@@ -51,6 +55,11 @@
                 {
                   "name": "DLHttp",
                   "source_files": "DLKit/Classes/Base/DLNet/DLHttp/**/*"
+                },
+                {
+                  "name": "DLNetReachability",
+                  "source_files": "DLKit/Classes/Base/DLNet/DLNetReachability/**/*",
+                  "requires_arc": false
                 }
               ]
             },
@@ -176,6 +185,20 @@
             {
               "name": "CircleBanner",
               "source_files": "DLKit/Classes/ViewComponent/ADCircleBanner/**/*"
+            }
+          ]
+        },
+        {
+          "name": "Vendors",
+          "subspecs": [
+            {
+              "name": "TablePullToRefresh",
+              "source_files": "DLKit/Classes/Vendors/TablePullToRefresh/**/*",
+              "dependencies": {
+                "SVPullToRefresh": [
+                  "~> 0.4.1"
+                ]
+              }
             }
           ]
         }
