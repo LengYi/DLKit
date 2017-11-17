@@ -1,0 +1,6 @@
+framework module OpenSSL_lib_iOS {
+  umbrella header "OpenSSL-lib-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

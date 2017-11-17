@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/DLKit/DLKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/GTMBase64/GTMBase64.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/OpenSSL-lib-iOS/OpenSSL_lib_iOS.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/DLKit/DLKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/GTMBase64/GTMBase64.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/OpenSSL-lib-iOS/OpenSSL_lib_iOS.framework"
 fi

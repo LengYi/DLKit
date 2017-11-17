@@ -119,14 +119,15 @@ Pod::Spec.new do |s|
        classes.subspec 'Mobile' do |mo|
         mo.subspec 'Cer' do |cer|
         cer.source_files = 'DLKit/Classes/Moblie/Cer/**/*'
-        cer.dependency 'OpenSSL-iOS-lib', '~> 1.0.2l.05'
+        cer.dependency 'OpenSSL-lib-iOS', '~> 0.1.0'
         cer.pod_target_xcconfig = {
-          # 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/OpenSSL-iOS-lib/include/**",
-         # 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/OpenSSL-iOS-lib/',
+          #'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/../../OpenSSL-lib-iOS/Vendors",
+          #'FRAMEWORK_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/../../OpenSSL-lib-iOS/Vendors111',
           # 'OTHER_LDFLAGS'          => '$(inherited) -undefined dynamic_lookup'
         }
         s.user_target_xcconfig = {
-          'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/OpenSSL-iOS-lib/include/**",
+          #'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/../../OpenSSL-lib-iOS/Vendors",
+          #'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/../../OpenSSL-lib-iOS/Vendors',
         }
         end
       end

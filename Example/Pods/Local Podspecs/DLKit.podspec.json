@@ -20,7 +20,6 @@
   },
   "default_subspecs": "Classes",
   "user_target_xcconfig": {
-    "HEADER_SEARCH_PATHS": "${PODS_ROOT}/OpenSSL-iOS-lib/include/**"
   },
   "frameworks": [
     "UIKit",
@@ -171,12 +170,11 @@
               "name": "Cer",
               "source_files": "DLKit/Classes/Moblie/Cer/**/*",
               "dependencies": {
-                "OpenSSL-iOS-lib": [
-                  "~> 1.0.2l.05"
+                "OpenSSL-lib-iOS": [
+                  "~> 0.1.0"
                 ]
               },
               "pod_target_xcconfig": {
-                "FRAMEWORK_SEARCH_PATHS": "$(inherited) $(PODS_ROOT)/OpenSSL-iOS-lib/"
               }
             }
           ]
