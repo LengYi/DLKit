@@ -164,14 +164,26 @@
           ]
         },
         {
+          "name": "Lib",
+          "source_files": "DLKit/Classes/Lib/**/*",
+          "subspecs": [
+            {
+              "name": "OpenSSL",
+              "ios": {
+                "vendored_frameworks": "DLKit/Classes/Lib/Openssl/openssl.framework"
+              }
+            }
+          ]
+        },
+        {
           "name": "Mobile",
           "subspecs": [
             {
               "name": "Cer",
               "source_files": "DLKit/Classes/Moblie/Cer/**/*",
               "dependencies": {
-                "OpenSSL-lib-iOS": [
-                  "~> 0.1.0"
+                "DLKit/Classes/Lib/Openssl/openssl.framework": [
+
                 ]
               },
               "pod_target_xcconfig": {

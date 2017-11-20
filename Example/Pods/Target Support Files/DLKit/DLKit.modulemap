@@ -1,6 +1,0 @@
-framework module DLKit {
-  umbrella header "DLKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

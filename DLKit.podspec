@@ -116,14 +116,24 @@ Pod::Spec.new do |s|
       end
     end
 
+      classes.subspec 'Lib' do |lib|
+        lib.source_files = 'DLKit/Classes/Lib/**/*'
+        lib.subspec 'OpenSSL' do |ssl|
+          ssl.ios.vendored_frameworks = 'DLKit/Classes/Lib/Openssl/openssl.framework'
+        end
+
+      end
+        
        classes.subspec 'Mobile' do |mo|
         mo.subspec 'Cer' do |cer|
         cer.source_files = 'DLKit/Classes/Moblie/Cer/**/*'
-        cer.dependency 'OpenSSL-lib-iOS', '~> 0.1.0'
+        cer.dependency 'DLKit/Classes/Lib/Openssl/openssl.framework'
+        #cer.ios.vendored_frameworks = 'Example/Pods/OpenSSL-lib-iOS/OpenSSL-lib-iOS/Vendors/openssl.framework'
         cer.pod_target_xcconfig = {
-          #'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/../../OpenSSL-lib-iOS/Vendors",
-          #'FRAMEWORK_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/../../OpenSSL-lib-iOS/Vendors111',
+          #'HEADER_SEARCH_PATHS' => "/Users/ice/Desktop/work/github/DLKit/Example/Pods/OpenSSL-lib-iOS/OpenSSL-lib-iOS/Vendors",
+          #'FRAMEWORK_SEARCH_PATHS' => '/Users/ice/Desktop/work/github/DLKit/Example/Pods/OpenSSL-lib-iOS/OpenSSL-lib-iOS/Vendors',
           # 'OTHER_LDFLAGS'          => '$(inherited) -undefined dynamic_lookup'
+          # 'ENABLE_BITCODE' => 'NO'
         }
         s.user_target_xcconfig = {
           #'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/../../OpenSSL-lib-iOS/Vendors",

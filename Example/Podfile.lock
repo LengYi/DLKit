@@ -4,6 +4,7 @@ PODS:
   - DLKit/Classes (0.3.3):
     - DLKit/Classes/Assist (= 0.3.3)
     - DLKit/Classes/Base (= 0.3.3)
+    - DLKit/Classes/Lib (= 0.3.3)
     - DLKit/Classes/Mobile (= 0.3.3)
   - DLKit/Classes/Assist (0.3.3):
     - DLKit/Classes/Assist/AOPStastic (= 0.3.3)
@@ -57,10 +58,12 @@ PODS:
   - DLKit/Classes/Base/Encrypt/DESBase64 (0.3.3):
     - GTMBase64 (~> 1.0.0)
   - DLKit/Classes/Base/Storage (0.3.3)
+  - DLKit/Classes/Lib (0.3.3):
+    - DLKit/Classes/Lib/OpenSSL (= 0.3.3)
+  - DLKit/Classes/Lib/OpenSSL (0.3.3)
   - DLKit/Classes/Mobile (0.3.3):
     - DLKit/Classes/Mobile/Cer (= 0.3.3)
-  - DLKit/Classes/Mobile/Cer (0.3.3):
-    - OpenSSL-lib-iOS (~> 0.1.0)
+  - DLKit/Classes/Mobile/Cer (0.3.3)
   - Expecta (1.0.6)
   - Expecta+Snapshots (3.1.1):
     - Expecta (~> 1.0)
@@ -72,7 +75,6 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - GTMBase64 (1.0.0)
-  - OpenSSL-lib-iOS (0.1.0)
   - Specta (1.0.7)
 
 DEPENDENCIES:
@@ -87,12 +89,11 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DLKit: 9407a38e855afb7986c88f63dafa303b6d40009d
+  DLKit: b3b3824ea1c0a8abd8d4386591b3aa8405c79444
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Expecta+Snapshots: dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   GTMBase64: 0da7372e95f5171f3f652db38cde6716f8eb5e24
-  OpenSSL-lib-iOS: 4caff5533da662dd917d15167f8b6c59713cb57f
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
 PODFILE CHECKSUM: e480cf4aa7c98aa087d061b9c47a7dfc5df23b50
