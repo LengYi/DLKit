@@ -15,7 +15,8 @@
  *  第三方日志框架  pod 'CocoaLumberjack' 有时间继续完善自己的框架
  */
 
-#define NSLog(s, ...) NSLog( @"====>>>>>  %@ #%d: %@",[NSString stringWithUTF8String:__FUNCTION__],__LINE__,[NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#define NLog( s, ... ) NSLog( @"======  %@(%d):%@", [NSString stringWithUTF8String:__FUNCTION__],__LINE__,[NSString stringWithFormat:(s), ##__VA_ARGS__] )
+
 #define DLog(...) [DLLog log:[NSString stringWithFormat:__VA_ARGS__] func:[NSString stringWithUTF8String:__FUNCTION__] linnum:__LINE__];
 
 
@@ -30,6 +31,13 @@ typedef void(^MailVCBlock)(UIViewController *vc,BOOL isDismiss);
 + (DLLog *)shareInstance;
 
 /**
+ *  日志路径
+ *
+ *  @return 日志路径
+ */
+- (NSString *)logPath;
+
+/**
  *  打印日志
  *
  *  @param str 日志
@@ -37,18 +45,5 @@ typedef void(^MailVCBlock)(UIViewController *vc,BOOL isDismiss);
  *  @param num 方法所在的行索引
  */
 + (void)log:(NSString*)str func:(NSString *)fun linnum:(int)num;
-
-/**
- *  已附件的形式发送日志
- *
- *  @param email   接收附件的邮箱地址
- *  @param title   邮箱标题
- *  @param content 邮箱内容
- *  @param block   回调展示邮箱视图
- */
-- (void)sendLogToEmail:(NSString *)email
-                 title:(NSString *)title
-               content:(NSString *)content
-                 block:(MailVCBlock)block;
 
 @end

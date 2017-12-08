@@ -60,52 +60,52 @@ static const int LogMaxSaveDay = 7;
     [log log:[NSString stringWithFormat:@"====>>>>> %@ %@ #%d: %@\n",[NSDate stringFromDate:[NSDate date]],fun,num,str]];
 }
 
-- (void)sendLogToEmail:(NSString *)email
-                 title:(NSString *)title
-               content:(NSString *)content
-                 block:(MailVCBlock)block{
-    if (email) {
-        if (!title) {
-            title = @"";
-        }
-        
-        if (!content) {
-            content = @"";
-        }
-        
-        NSString *log = @"";
-        if ([[NSFileManager defaultManager] fileExistsAtPath:[self logPath]]) {
-            log = [NSString stringWithContentsOfFile:[self logPath] encoding:NSUTF8StringEncoding error:nil];
-        }
-        // 用户设备是否绑定了邮箱账号
-        if ([MFMailComposeViewController canSendMail]){
-            MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
-            vc.mailComposeDelegate = self;
-            // 标题
-            [vc setSubject:title];
-            //设置收件人
-            [vc setToRecipients:[NSArray arrayWithObjects:email, nil]];
-            //设置邮件内容
-            [vc setMessageBody:content isHTML:NO];
-            // 日志以附件的方式发送
-            [vc addAttachmentData:[NSData dataWithContentsOfFile:[self logPath]] mimeType:@"text" fileName:@"log.txt"];
-            if (block) {
-                self.block = block;
-                block(vc,NO);
-            }
-        }else{
-            // 打开设备添加账户页面   设置->邮件、通讯录、日历->添加账户
-            // NSString *urlStr = [NSString stringWithFormat:@"mailto:%@?subject=%@&body=%@",email,title,content]; 发送少量数据
-            NSString *urlStr = [NSString stringWithFormat:@"mailto:%@",email];
-            NSURL *url = [NSURL URLWithString:urlStr];
-            if ([[UIApplication sharedApplication] canOpenURL:url]){
-                [[UIApplication sharedApplication] openURL:url];
-            }else{
-                // 出错处理
-            }
-        }
-    }
-}
+//- (void)sendLogToEmail:(NSString *)email
+//                 title:(NSString *)title
+//               content:(NSString *)content
+//                 block:(MailVCBlock)block{
+//    if (email) {
+//        if (!title) {
+//            title = @"";
+//        }
+//
+//        if (!content) {
+//            content = @"";
+//        }
+//
+//        NSString *log = @"";
+//        if ([[NSFileManager defaultManager] fileExistsAtPath:[self logPath]]) {
+//            log = [NSString stringWithContentsOfFile:[self logPath] encoding:NSUTF8StringEncoding error:nil];
+//        }
+//        // 用户设备是否绑定了邮箱账号
+//        if ([MFMailComposeViewController canSendMail]){
+//            MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
+//            vc.mailComposeDelegate = self;
+//            // 标题
+//            [vc setSubject:title];
+//            //设置收件人
+//            [vc setToRecipients:[NSArray arrayWithObjects:email, nil]];
+//            //设置邮件内容
+//            [vc setMessageBody:content isHTML:NO];
+//            // 日志以附件的方式发送
+//            [vc addAttachmentData:[NSData dataWithContentsOfFile:[self logPath]] mimeType:@"text" fileName:@"log.txt"];
+//            if (block) {
+//                self.block = block;
+//                block(vc,NO);
+//            }
+//        }else{
+//            // 打开设备添加账户页面   设置->邮件、通讯录、日历->添加账户
+//            // NSString *urlStr = [NSString stringWithFormat:@"mailto:%@?subject=%@&body=%@",email,title,content]; 发送少量数据
+//            NSString *urlStr = [NSString stringWithFormat:@"mailto:%@",email];
+//            NSURL *url = [NSURL URLWithString:urlStr];
+//            if ([[UIApplication sharedApplication] canOpenURL:url]){
+//                [[UIApplication sharedApplication] openURL:url];
+//            }else{
+//                // 出错处理
+//            }
+//        }
+//    }
+//}
 
 - (void)clearExpiredLog{
     NSString *path = [self logPath];
@@ -148,13 +148,6 @@ static const int LogMaxSaveDay = 7;
     NSString *documentsPath = [paths objectAtIndex:0];
     NSString *filePath = [documentsPath stringByAppendingPathComponent:@"log.txt"];
     return filePath;
-}
-
-#pragma mark --邮件代理
-- (void)mailComposeController:(MFMailComposeViewController *)controller
-          didFinishWithResult:(MFMailComposeResult)result
-                        error:(NSError *)error{
-    self.block(controller,YES);
 }
 
 @end

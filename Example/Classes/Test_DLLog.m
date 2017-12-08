@@ -12,21 +12,25 @@
 @implementation Test_DLLog
 + (void)test{
     NSLog(@"控制台日志");
+    NLog(@"NLog");
     DLog(@"日志信息 99oiuppp");
     DLog(@"爱你哟");
     DLog(@"9999999");
 
-    [[DLLog shareInstance] sendLogToEmail:@"707689899@qq.com"
-                                    title:@"错误日志"
-                                  content:@"发送了一个日志附件"
-                                    block:^(UIViewController *vc,BOOL isDismiss) {
-                                        if (isDismiss) {
-                                            [vc dismissViewControllerAnimated:NO completion:nil];
-                                        }else{
-                                            [[[UIApplication sharedApplication] delegate].window.rootViewController presentViewController:vc
-                                                                                                                                 animated:YES
-                                                                                                                               completion:nil];
-                                        }
-                                    }];
+    NSString *log = [NSString stringWithContentsOfFile:[[DLLog shareInstance] logPath] encoding:NSUTF8StringEncoding error:nil];
+    NSLog(@"输出写入文件的日志\n %@",log);
+    
+//    [[DLLog shareInstance] sendLogToEmail:@"707689899@qq.com"
+//                                    title:@"错误日志"
+//                                  content:@"发送了一个日志附件"
+//                                    block:^(UIViewController *vc,BOOL isDismiss) {
+//                                        if (isDismiss) {
+//                                            [vc dismissViewControllerAnimated:NO completion:nil];
+//                                        }else{
+//                                            [[[UIApplication sharedApplication] delegate].window.rootViewController presentViewController:vc
+//                                                                                                                                 animated:YES
+//                                                                                                                               completion:nil];
+//                                        }
+//                                    }];
 }
 @end
