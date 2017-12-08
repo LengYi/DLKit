@@ -22,3 +22,12 @@
 [View.layer setMasksToBounds:YES];\
 [View.layer setBorderWidth:(Width)];\
 [View.layer setBorderColor:[Color CGColor]]
+
+// G/MB/KB 转换
+#define GBSize(size) [NSString stringWithFormat:@"%.2f GB",size / 1024.0f / 1024.0f]
+#define MBSize(size) [NSString stringWithFormat:@"%.1f MB",size / 1024.0f]
+#define KBSize(size) [NSString stringWithFormat:@"%.1f KB",size / 1024.0f]
+#define APPSize(size) size > 1024.0f * 1024.0f ? GBSize(size) : MBSize(size)
+
+// 检查字符有效性
+#define IsValidString(String) (String != nil && ![String isEqualToString:@""]) ? YES : NO

@@ -40,5 +40,14 @@
     NSString *telNumStr = @"13215013594";
     BOOL isTelNum = [telNumStr isTelephoneNumber];
     NSLog(@"\n %@ isTelNum = %d \n ",telNumStr,isTelNum);
+    
+    int res = [NSString compareVersion:@"1.0.4" v2:@"1.0.2"];
+    if (res == 0) {
+        NSLog(@"相等");
+    }else if(res == 1){
+        NSLog(@"升级");
+    }else{
+        NSLog(@"不升级");
+    }
 }
 @end

@@ -16,5 +16,6 @@
 + (NSString *)platformType;
 + (NSString *)systemVersion;
 + (BOOL)jailbreaked;
-
++ (long long)totalDiskSpace;
++ (long long)freeDiskSpace;
 @end
