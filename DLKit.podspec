@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.3.8'
+  s.version          = '0.3.9'
   s.summary          = '构建App常用的基本功能库'
 
 # This description is used to generate tags and improve search results.
@@ -141,6 +141,11 @@ Pod::Spec.new do |s|
       vendor.subspec 'TablePullToRefresh' do |tableRefresh|
         tableRefresh.source_files = 'DLKit/Classes/Vendors/TablePullToRefresh/**/*'
         tableRefresh.dependency 'SVPullToRefresh','~> 0.4.1'
+      end
+      vendor.subspec 'UIKitEx' do |kitEx|
+        kitEx.subspec 'Segment' do |seg|
+          seg.source_files = 'DLKit/Classes/Vendors/UIKitEx/Segment/**/*'
+        end
       end
     end
     

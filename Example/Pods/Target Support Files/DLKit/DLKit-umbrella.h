@@ -33,6 +33,7 @@
 #import "DLDESBase64.h"
 #import "DLKeyChain.h"
 #import "PullToRefreshTable.h"
+#import "DLSegmentView.h"
 #import "ADCircleBannerView.h"
 #import "SMPageControl.h"
 

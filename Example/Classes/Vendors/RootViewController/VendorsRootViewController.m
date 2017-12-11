@@ -9,6 +9,7 @@
 #import "VendorsRootViewController.h"
 #import "TBViewController.h"
 #import "RefreshTableViewController.h"
+#import "SegmentViewController.h"
 
 @interface VendorsRootViewController ()<TBViewControllerDelegate>
 @property (nonatomic,strong) TBViewController *tbVC;
@@ -35,7 +36,8 @@
     NSMutableArray *dataArray = [[NSMutableArray alloc] init];
     
     [dataArray addObjectsFromArray:@[
-                                     @"PullToRefreshTable",]];
+                                     @"PullToRefreshTable",
+                                     @"DLSegment"]];
     return dataArray;
 }
 
@@ -46,6 +48,10 @@
             RefreshTableViewController *vc = [[RefreshTableViewController alloc] init];
             [self.navigationController pushViewController:vc animated:NO];
             break;
+        }
+        case 1:{
+            SegmentViewController *vc = [[SegmentViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:NO];
         }
         default:
             break;
