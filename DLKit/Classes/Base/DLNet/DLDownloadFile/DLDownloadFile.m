@@ -15,11 +15,14 @@
 @property (nonatomic,assign) long long  totalSize;
 
 @property (nonatomic,assign) long long         receiveLength;
+@property (nonatomic,assign) long long         oldReceiveLength;
 @property (nonatomic,assign) FILE               *fd;
 @property (nonatomic,strong) NSString           *tempFilePath;
 @property (nonatomic,strong) NSString           *urlString;
 @property (nonatomic,strong) NSDictionary       *headerFieldDic;
 @property (nonatomic,strong) NSURLConnection    *connection;
+@property (nonatomic,strong) NSTimer            *timer;
+@property (nonatomic,assign) BOOL               allowShow;
 
 @property (nonatomic,strong) DownloadPreBlock      preBlock;
 @property (nonatomic,strong) DownloadParamersBlock progressBlock;
@@ -36,6 +39,7 @@
         _to     =   0;
         _receiveLength  =   0;
         _totalSize      =   0;
+        _oldReceiveLength = 0;
     }
     return self;
 }
@@ -79,6 +83,29 @@
         _connection = nil;
     }
     [self closeStream];
+    [self stopTimer];
+}
+
+- (void)startTimer{
+    [self stopTimer];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(reloadProcess) userInfo:nil repeats:YES];
+    //_allowShow = YES;
+}
+
+- (void)stopTimer{
+    if (_timer){
+        if ([_timer isValid])
+        {
+            [_timer invalidate];
+        }
+        _timer = nil;
+    }
+    _allowShow = NO;
+}
+
+// 每秒输出
+- (void)reloadProcess{
+    _allowShow = YES;
 }
 
 // 打开下载文件流
@@ -131,6 +158,9 @@
         }
     }
     
+    if (success) {
+        [self startTimer];
+    }
     return success;
 }
 
@@ -161,8 +191,11 @@
         _receiveLength += sz;
     }
     
-    if (self.progressBlock) {
-        self.progressBlock(_totalSize,_receiveLength,sz,nil);
+    if (_allowShow && self.progressBlock) {
+        long long downloadSpeed = _oldReceiveLength > 0 ? _receiveLength - _oldReceiveLength : sz;
+        _oldReceiveLength = _receiveLength;
+        self.progressBlock(_totalSize,_receiveLength,downloadSpeed,nil);
+        _allowShow = NO;
     }
 }
 
@@ -174,6 +207,7 @@
     if (self.completeBlock) {
         self.completeBlock(_totalSize,_receiveLength,0,nil);
     }
+    [self stopTimer];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
@@ -188,6 +222,7 @@
         }
         self.failedBlock(_totalSize,_receiveLength,0,tbError);
     }
+    [self stopTimer];
 }
 
 @end

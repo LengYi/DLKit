@@ -32,6 +32,7 @@
 #import "DLAES128.h"
 #import "DLDESBase64.h"
 #import "DLKeyChain.h"
+#import "DLProvisionAnalyze.h"
 #import "PullToRefreshTable.h"
 #import "DLSegmentView.h"
 #import "ADCircleBannerView.h"

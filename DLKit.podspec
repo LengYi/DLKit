@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.3.9'
+  s.version          = '0.4.0'
   s.summary          = '构建App常用的基本功能库'
 
 # This description is used to generate tags and improve search results.
@@ -136,6 +136,12 @@ Pod::Spec.new do |s|
         circleBanner.source_files = 'DLKit/Classes/ViewComponent/ADCircleBanner/**/*'
        end
     end 
+
+    classes.subspec 'Mobile' do |mobile|
+      mobile.subspec 'Provision' do |pro|
+        pro.source_files = 'DLKit/Classes/Moblie/Provision/**/*'
+        end
+    end
 
     classes.subspec 'Vendors' do |vendor|
       vendor.subspec 'TablePullToRefresh' do |tableRefresh|

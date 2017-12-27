@@ -7,7 +7,7 @@
 //
 
 #import "RefreshTableViewController.h"
-#import "PullToRefreshTable.h"
+#import "PullToRefreshTable+CustomView.h"
 #import "BaseViewController+CaptionView.h"
 #import "BaseViewController+LoadingView.h"
 #import "MapModel.h"
