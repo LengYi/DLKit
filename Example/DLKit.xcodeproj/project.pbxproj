@@ -21,7 +21,6 @@
 		584417A61FBC3B300075D393 /* BaseViewController+LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 584417A41FBC3B300075D393 /* BaseViewController+LoadingView.m */; };
 		5855393C1F2715E1004B9E84 /* TBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855393B1F2715E1004B9E84 /* TBViewController.m */; };
 		585539401F271A0E004B9E84 /* ExViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855393F1F271A0E004B9E84 /* ExViewController.m */; };
-		585539441F271DCB004B9E84 /* SafeExViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 585539431F271DCB004B9E84 /* SafeExViewController.m */; };
 		585539481F271F4C004B9E84 /* EncryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 585539471F271F4C004B9E84 /* EncryViewController.m */; };
 		5855394D1F272330004B9E84 /* Test_DLDESBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 585539491F272330004B9E84 /* Test_DLDESBase64.m */; };
 		5855394E1F272330004B9E84 /* Test_DLAES128.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855394B1F272330004B9E84 /* Test_DLAES128.m */; };
@@ -29,9 +28,6 @@
 		5855395B1F272341004B9E84 /* Test_NSDataEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 585539541F272341004B9E84 /* Test_NSDataEx.m */; };
 		5855395C1F272341004B9E84 /* Test_NSURLEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 585539551F272341004B9E84 /* Test_NSURLEx.m */; };
 		5855395D1F272341004B9E84 /* Test_NSDateEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 585539581F272341004B9E84 /* Test_NSDateEx.m */; };
-		585539601F27242C004B9E84 /* Test_NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855395F1F27242C004B9E84 /* Test_NSArray+Safe.m */; };
-		585539631F27249E004B9E84 /* Test_NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 585539621F27249E004B9E84 /* Test_NSMutableArray+Safe.m */; };
-		585539661F2724FA004B9E84 /* Test_NSMutableDictionAry+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 585539651F2724FA004B9E84 /* Test_NSMutableDictionAry+Safe.m */; };
 		587563FF1EA86634001D6B97 /* Test_DLHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 587563FE1EA86634001D6B97 /* Test_DLHttp.m */; };
 		587564051EA868C3001D6B97 /* Test_DLAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 587564041EA868C3001D6B97 /* Test_DLAppInfo.m */; };
 		5875642E1EA8C15A001D6B97 /* Test_DLDocumentPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5875642D1EA8C15A001D6B97 /* Test_DLDocumentPath.m */; };
@@ -127,8 +123,6 @@
 		5855393B1F2715E1004B9E84 /* TBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBViewController.m; sourceTree = "<group>"; };
 		5855393E1F271A0E004B9E84 /* ExViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExViewController.h; sourceTree = "<group>"; };
 		5855393F1F271A0E004B9E84 /* ExViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExViewController.m; sourceTree = "<group>"; };
-		585539421F271DCB004B9E84 /* SafeExViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeExViewController.h; sourceTree = "<group>"; };
-		585539431F271DCB004B9E84 /* SafeExViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeExViewController.m; sourceTree = "<group>"; };
 		585539461F271F4C004B9E84 /* EncryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryViewController.h; sourceTree = "<group>"; };
 		585539471F271F4C004B9E84 /* EncryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryViewController.m; sourceTree = "<group>"; };
 		585539491F272330004B9E84 /* Test_DLDESBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_DLDESBase64.m; sourceTree = "<group>"; };
@@ -143,12 +137,6 @@
 		585539571F272341004B9E84 /* Test_NSDataEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_NSDataEx.h; sourceTree = "<group>"; };
 		585539581F272341004B9E84 /* Test_NSDateEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_NSDateEx.m; sourceTree = "<group>"; };
 		585539591F272341004B9E84 /* Test_NSStringEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_NSStringEx.h; sourceTree = "<group>"; };
-		5855395E1F27242C004B9E84 /* Test_NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test_NSArray+Safe.h"; sourceTree = "<group>"; };
-		5855395F1F27242C004B9E84 /* Test_NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Test_NSArray+Safe.m"; sourceTree = "<group>"; };
-		585539611F27249E004B9E84 /* Test_NSMutableArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test_NSMutableArray+Safe.h"; sourceTree = "<group>"; };
-		585539621F27249E004B9E84 /* Test_NSMutableArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Test_NSMutableArray+Safe.m"; sourceTree = "<group>"; };
-		585539641F2724FA004B9E84 /* Test_NSMutableDictionAry+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test_NSMutableDictionAry+Safe.h"; sourceTree = "<group>"; };
-		585539651F2724FA004B9E84 /* Test_NSMutableDictionAry+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Test_NSMutableDictionAry+Safe.m"; sourceTree = "<group>"; };
 		587563FD1EA86634001D6B97 /* Test_DLHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_DLHttp.h; sourceTree = "<group>"; };
 		587563FE1EA86634001D6B97 /* Test_DLHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_DLHttp.m; sourceTree = "<group>"; };
 		587564031EA868C3001D6B97 /* Test_DLAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_DLAppInfo.h; sourceTree = "<group>"; };
@@ -341,21 +329,6 @@
 			path = Extended;
 			sourceTree = "<group>";
 		};
-		585539411F271D72004B9E84 /* SafeExtended */ = {
-			isa = PBXGroup;
-			children = (
-				585539421F271DCB004B9E84 /* SafeExViewController.h */,
-				585539431F271DCB004B9E84 /* SafeExViewController.m */,
-				5855395E1F27242C004B9E84 /* Test_NSArray+Safe.h */,
-				5855395F1F27242C004B9E84 /* Test_NSArray+Safe.m */,
-				585539611F27249E004B9E84 /* Test_NSMutableArray+Safe.h */,
-				585539621F27249E004B9E84 /* Test_NSMutableArray+Safe.m */,
-				585539641F2724FA004B9E84 /* Test_NSMutableDictionAry+Safe.h */,
-				585539651F2724FA004B9E84 /* Test_NSMutableDictionAry+Safe.m */,
-			);
-			path = SafeExtended;
-			sourceTree = "<group>";
-		};
 		585539451F271F3B004B9E84 /* EncryAndDecry */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,7 +350,6 @@
 				58C75F0A1F3D55600003F6C4 /* HttpMock */,
 				58854EBD1F30225B00531D61 /* Log */,
 				585539451F271F3B004B9E84 /* EncryAndDecry */,
-				585539411F271D72004B9E84 /* SafeExtended */,
 				5855393D1F2719EA004B9E84 /* Extended */,
 				582019461EFCEB55004CA051 /* Test_DLLog.h */,
 				582019471EFCEB55004CA051 /* Test_DLLog.m */,
@@ -848,10 +820,7 @@
 				5891BF2A1EADC8790014010D /* Test_DLProtocol.m in Sources */,
 				587564051EA868C3001D6B97 /* Test_DLAppInfo.m in Sources */,
 				584417A01FBC3B290075D393 /* RefreshTableViewController.m in Sources */,
-				585539601F27242C004B9E84 /* Test_NSArray+Safe.m in Sources */,
-				585539661F2724FA004B9E84 /* Test_NSMutableDictionAry+Safe.m in Sources */,
 				5855394E1F272330004B9E84 /* Test_DLAES128.m in Sources */,
-				585539441F271DCB004B9E84 /* SafeExViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* DLViewController.m in Sources */,
 				5855395A1F272341004B9E84 /* Test_NSStringEx.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -872,7 +841,6 @@
 				5855395B1F272341004B9E84 /* Test_NSDataEx.m in Sources */,
 				587C5DB61FDE58BA007F235C /* SegmentViewController.m in Sources */,
 				584417941FBC3B1A0075D393 /* MapModel.m in Sources */,
-				585539631F27249E004B9E84 /* Test_NSMutableArray+Safe.m in Sources */,
 				5855393C1F2715E1004B9E84 /* TBViewController.m in Sources */,
 				585539401F271A0E004B9E84 /* ExViewController.m in Sources */,
 				587564311EA8CC4C001D6B97 /* Test_DLDownloadFile.m in Sources */,

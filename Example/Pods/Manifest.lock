@@ -1,85 +1,77 @@
 PODS:
-  - DLKit (0.4.0):
-    - DLKit/Classes (= 0.4.0)
-  - DLKit/Classes (0.4.0):
-    - DLKit/Classes/Assist (= 0.4.0)
-    - DLKit/Classes/Base (= 0.4.0)
-    - DLKit/Classes/Mobile (= 0.4.0)
-    - DLKit/Classes/Vendors (= 0.4.0)
-    - DLKit/Classes/ViewComponent (= 0.4.0)
-  - DLKit/Classes/Assist (0.4.0):
-    - DLKit/Classes/Assist/AOPStastic (= 0.4.0)
-    - DLKit/Classes/Assist/DLLog (= 0.4.0)
-    - DLKit/Classes/Assist/HttpMock (= 0.4.0)
-  - DLKit/Classes/Assist/AOPStastic (0.4.0)
-  - DLKit/Classes/Assist/DLLog (0.4.0):
+  - DLKit (0.4.1):
+    - DLKit/Classes (= 0.4.1)
+  - DLKit/Classes (0.4.1):
+    - DLKit/Classes/Assist (= 0.4.1)
+    - DLKit/Classes/Base (= 0.4.1)
+    - DLKit/Classes/Mobile (= 0.4.1)
+    - DLKit/Classes/Vendors (= 0.4.1)
+    - DLKit/Classes/ViewComponent (= 0.4.1)
+  - DLKit/Classes/Assist (0.4.1):
+    - DLKit/Classes/Assist/AOPStastic (= 0.4.1)
+    - DLKit/Classes/Assist/DLLog (= 0.4.1)
+    - DLKit/Classes/Assist/HttpMock (= 0.4.1)
+  - DLKit/Classes/Assist/AOPStastic (0.4.1)
+  - DLKit/Classes/Assist/DLLog (0.4.1):
     - DLKit/Classes/Base/DLUIKitExtended/NSDate
-  - DLKit/Classes/Assist/HttpMock (0.4.0):
+  - DLKit/Classes/Assist/HttpMock (0.4.1):
     - GYHttpMock (~> 1.0.1)
-  - DLKit/Classes/Base (0.4.0):
-    - DLKit/Classes/Base/Define (= 0.4.0)
-    - DLKit/Classes/Base/DLAppInfo (= 0.4.0)
-    - DLKit/Classes/Base/DLData (= 0.4.0)
-    - DLKit/Classes/Base/DLNet (= 0.4.0)
-    - DLKit/Classes/Base/DLPath (= 0.4.0)
-    - DLKit/Classes/Base/DLUIKitExtended (= 0.4.0)
-    - DLKit/Classes/Base/DLUIKitSafeExtended (= 0.4.0)
-    - DLKit/Classes/Base/Encrypt (= 0.4.0)
-    - DLKit/Classes/Base/Storage (= 0.4.0)
-  - DLKit/Classes/Base/Define (0.4.0)
-  - DLKit/Classes/Base/DLAppInfo (0.4.0)
-  - DLKit/Classes/Base/DLData (0.4.0)
-  - DLKit/Classes/Base/DLNet (0.4.0):
-    - DLKit/Classes/Base/DLNet/DLDownloadFile (= 0.4.0)
-    - DLKit/Classes/Base/DLNet/DLHttp (= 0.4.0)
-    - DLKit/Classes/Base/DLNet/DLNetReachability (= 0.4.0)
-  - DLKit/Classes/Base/DLNet/DLDownloadFile (0.4.0):
+  - DLKit/Classes/Base (0.4.1):
+    - DLKit/Classes/Base/Define (= 0.4.1)
+    - DLKit/Classes/Base/DLAppInfo (= 0.4.1)
+    - DLKit/Classes/Base/DLData (= 0.4.1)
+    - DLKit/Classes/Base/DLNet (= 0.4.1)
+    - DLKit/Classes/Base/DLPath (= 0.4.1)
+    - DLKit/Classes/Base/DLUIKitExtended (= 0.4.1)
+    - DLKit/Classes/Base/Encrypt (= 0.4.1)
+    - DLKit/Classes/Base/Storage (= 0.4.1)
+  - DLKit/Classes/Base/Define (0.4.1)
+  - DLKit/Classes/Base/DLAppInfo (0.4.1)
+  - DLKit/Classes/Base/DLData (0.4.1)
+  - DLKit/Classes/Base/DLNet (0.4.1):
+    - DLKit/Classes/Base/DLNet/DLDownloadFile (= 0.4.1)
+    - DLKit/Classes/Base/DLNet/DLHttp (= 0.4.1)
+    - DLKit/Classes/Base/DLNet/DLNetReachability (= 0.4.1)
+  - DLKit/Classes/Base/DLNet/DLDownloadFile (0.4.1):
     - DLKit/Classes/Base/DLUIKitExtended/NSURL
-  - DLKit/Classes/Base/DLNet/DLHttp (0.4.0)
-  - DLKit/Classes/Base/DLNet/DLNetReachability (0.4.0)
-  - DLKit/Classes/Base/DLPath (0.4.0)
-  - DLKit/Classes/Base/DLUIKitExtended (0.4.0):
-    - DLKit/Classes/Base/DLUIKitExtended/Device (= 0.4.0)
-    - DLKit/Classes/Base/DLUIKitExtended/NSData (= 0.4.0)
-    - DLKit/Classes/Base/DLUIKitExtended/NSDate (= 0.4.0)
-    - DLKit/Classes/Base/DLUIKitExtended/NSObject (= 0.4.0)
-    - DLKit/Classes/Base/DLUIKitExtended/NSString (= 0.4.0)
-    - DLKit/Classes/Base/DLUIKitExtended/NSURL (= 0.4.0)
-  - DLKit/Classes/Base/DLUIKitExtended/Device (0.4.0)
-  - DLKit/Classes/Base/DLUIKitExtended/NSData (0.4.0)
-  - DLKit/Classes/Base/DLUIKitExtended/NSDate (0.4.0)
-  - DLKit/Classes/Base/DLUIKitExtended/NSObject (0.4.0)
-  - DLKit/Classes/Base/DLUIKitExtended/NSString (0.4.0)
-  - DLKit/Classes/Base/DLUIKitExtended/NSURL (0.4.0)
-  - DLKit/Classes/Base/DLUIKitSafeExtended (0.4.0):
-    - DLKit/Classes/Base/DLUIKitSafeExtended/NSMutableArray (= 0.4.0)
-    - DLKit/Classes/Base/DLUIKitSafeExtended/NSMutableDictionary (= 0.4.0)
-  - DLKit/Classes/Base/DLUIKitSafeExtended/NSMutableArray (0.4.0):
-    - DLKit/Classes/Base/DLUIKitExtended/NSObject
-  - DLKit/Classes/Base/DLUIKitSafeExtended/NSMutableDictionary (0.4.0):
-    - DLKit/Classes/Base/DLUIKitExtended/NSObject
-  - DLKit/Classes/Base/Encrypt (0.4.0):
-    - DLKit/Classes/Base/Encrypt/AES128 (= 0.4.0)
-    - DLKit/Classes/Base/Encrypt/DESBase64 (= 0.4.0)
-  - DLKit/Classes/Base/Encrypt/AES128 (0.4.0):
+  - DLKit/Classes/Base/DLNet/DLHttp (0.4.1)
+  - DLKit/Classes/Base/DLNet/DLNetReachability (0.4.1)
+  - DLKit/Classes/Base/DLPath (0.4.1)
+  - DLKit/Classes/Base/DLUIKitExtended (0.4.1):
+    - DLKit/Classes/Base/DLUIKitExtended/Device (= 0.4.1)
+    - DLKit/Classes/Base/DLUIKitExtended/NSData (= 0.4.1)
+    - DLKit/Classes/Base/DLUIKitExtended/NSDate (= 0.4.1)
+    - DLKit/Classes/Base/DLUIKitExtended/NSObject (= 0.4.1)
+    - DLKit/Classes/Base/DLUIKitExtended/NSString (= 0.4.1)
+    - DLKit/Classes/Base/DLUIKitExtended/NSURL (= 0.4.1)
+  - DLKit/Classes/Base/DLUIKitExtended/Device (0.4.1)
+  - DLKit/Classes/Base/DLUIKitExtended/NSData (0.4.1)
+  - DLKit/Classes/Base/DLUIKitExtended/NSDate (0.4.1)
+  - DLKit/Classes/Base/DLUIKitExtended/NSObject (0.4.1)
+  - DLKit/Classes/Base/DLUIKitExtended/NSString (0.4.1)
+  - DLKit/Classes/Base/DLUIKitExtended/NSURL (0.4.1)
+  - DLKit/Classes/Base/Encrypt (0.4.1):
+    - DLKit/Classes/Base/Encrypt/AES128 (= 0.4.1)
+    - DLKit/Classes/Base/Encrypt/DESBase64 (= 0.4.1)
+  - DLKit/Classes/Base/Encrypt/AES128 (0.4.1):
     - GTMBase64 (~> 1.0.0)
-  - DLKit/Classes/Base/Encrypt/DESBase64 (0.4.0):
+  - DLKit/Classes/Base/Encrypt/DESBase64 (0.4.1):
     - GTMBase64 (~> 1.0.0)
-  - DLKit/Classes/Base/Storage (0.4.0)
-  - DLKit/Classes/Mobile (0.4.0):
-    - DLKit/Classes/Mobile/Provision (= 0.4.0)
-  - DLKit/Classes/Mobile/Provision (0.4.0)
-  - DLKit/Classes/Vendors (0.4.0):
-    - DLKit/Classes/Vendors/TablePullToRefresh (= 0.4.0)
-    - DLKit/Classes/Vendors/UIKitEx (= 0.4.0)
-  - DLKit/Classes/Vendors/TablePullToRefresh (0.4.0):
+  - DLKit/Classes/Base/Storage (0.4.1)
+  - DLKit/Classes/Mobile (0.4.1):
+    - DLKit/Classes/Mobile/Provision (= 0.4.1)
+  - DLKit/Classes/Mobile/Provision (0.4.1)
+  - DLKit/Classes/Vendors (0.4.1):
+    - DLKit/Classes/Vendors/TablePullToRefresh (= 0.4.1)
+    - DLKit/Classes/Vendors/UIKitEx (= 0.4.1)
+  - DLKit/Classes/Vendors/TablePullToRefresh (0.4.1):
     - SVPullToRefresh (~> 0.4.1)
-  - DLKit/Classes/Vendors/UIKitEx (0.4.0):
-    - DLKit/Classes/Vendors/UIKitEx/Segment (= 0.4.0)
-  - DLKit/Classes/Vendors/UIKitEx/Segment (0.4.0)
-  - DLKit/Classes/ViewComponent (0.4.0):
-    - DLKit/Classes/ViewComponent/CircleBanner (= 0.4.0)
-  - DLKit/Classes/ViewComponent/CircleBanner (0.4.0)
+  - DLKit/Classes/Vendors/UIKitEx (0.4.1):
+    - DLKit/Classes/Vendors/UIKitEx/Segment (= 0.4.1)
+  - DLKit/Classes/Vendors/UIKitEx/Segment (0.4.1)
+  - DLKit/Classes/ViewComponent (0.4.1):
+    - DLKit/Classes/ViewComponent/CircleBanner (= 0.4.1)
+  - DLKit/Classes/ViewComponent/CircleBanner (0.4.1)
   - Expecta (1.0.6)
   - Expecta+Snapshots (3.1.1):
     - Expecta (~> 1.0)
@@ -112,7 +104,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DLKit: 901fb9943d3b2e8546c2f805ddb064d8a2c548c6
+  DLKit: f5a40f43d7d9792ca80f6718a64c1b85c6ddb35d
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Expecta+Snapshots: dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a

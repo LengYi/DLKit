@@ -16,7 +16,7 @@
 #import "Test_DLKeyChain.h"
 #import "Test_DLLog.h"
 #import "ExViewController.h"
-#import "SafeExViewController.h"
+//#import "SafeExViewController.h"
 #import "EncryViewController.h"
 #import "StatisticViewController.h"
 #import "MockViewController.h"
@@ -57,7 +57,6 @@
                                       @"App document cache tmp 数据存储路径",
                                       @"文件下载器",@"网络数据打包解析",
                                       @"UIKitExtended",
-                                      @"UIKitSafeExtended",
                                       @"KeyChain 存储",
                                       @"Log日志",
                                       @"AOP 打点统计",
@@ -98,37 +97,37 @@
             [_nav pushViewController:vc animated:YES];
             break;
         }
-        case 7:{
-            SafeExViewController *vc = [[SafeExViewController alloc] init];
-            vc.title = title;
-            [_nav pushViewController:vc animated:YES];
-            break;
-        }
-        case 8:
+//        case 7:{
+//            SafeExViewController *vc = [[SafeExViewController alloc] init];
+//            vc.title = title;
+//            [_nav pushViewController:vc animated:YES];
+//            break;
+//        }
+        case 7:
             [Test_DLKeyChain test];
             break;
-        case 9:
+        case 8:
             [Test_DLLog test];
             break;
-        case 10:{
+        case 9:{
             StatisticViewController *vc = [[StatisticViewController alloc] init];
             vc.title = title;
             [_nav pushViewController:vc animated:NO];
             break;
         }
-        case 11:{
+        case 10:{
             MockViewController *vc = [[MockViewController alloc] init];
             vc.title = title;
             [_nav pushViewController:vc animated:NO];
             break;
         }
-        case 12:{
+        case 11:{
             ComponentRootViewController *vc = [[ComponentRootViewController alloc] init];
             vc.title = title;
             [_nav pushViewController:vc animated:NO];
             break;
         }
-        case 13:{
+        case 12:{
             VendorsRootViewController *vc = [[VendorsRootViewController alloc] init];
             vc.title = title;
             [_nav pushViewController:vc animated:NO];
