@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLKit'
-  s.version          = '0.4.1'
+  s.version          = '0.4.3'
   s.summary          = '构建App常用的基本功能库'
 
 # This description is used to generate tags and improve search results.
@@ -120,6 +120,12 @@ Pod::Spec.new do |s|
           log.source_files = 'DLKit/Classes/Assist/Statistics/Log/DLLog/**/*'
           log.dependency 'DLKit/Classes/Base/DLUIKitExtended/NSDate'
       end
+
+      assist.subspec 'DLChineseLog' do |chineseLog|
+          chineseLog.source_files = 'DLKit/Classes/Assist/Statistics/Log/DLChineseLog/**/*'
+      end
+
+
       assist.subspec 'AOPStastic' do |stastic|
       stastic.source_files = 'DLKit/Classes/Assist/Statistics/AOPStatistic/**/*'
       end
