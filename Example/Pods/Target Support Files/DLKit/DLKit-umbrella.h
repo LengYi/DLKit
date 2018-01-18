@@ -4,6 +4,7 @@
 
 #import "AOPStatistic.h"
 #import "DLAspects.h"
+#import "DLChineseLog.h"
 #import "DLLog.h"
 #import "DLMockManager.h"
 #import "DLMockModel.h"

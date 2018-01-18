@@ -1,6 +1,6 @@
 {
   "name": "DLKit",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "summary": "构建App常用的基本功能库",
   "description": "Http请求,获取设备信息,获取App信息,Base64加解密,文件下载器,网络数据打包解析,UIKitExtened,KeyChain数据存储,AOP打点统计子系统,Http网络请求数据拦截修改管理子系统,\n广告无限自动循环轮播组件,iOS常用宏,ViewController通用架构(Loading加载,网络异常,下拉上拉刷新)",
   "homepage": "https://github.com/LengYi/DLKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/LengYi/DLKit.git",
-    "tag": "0.4.1"
+    "tag": "0.4.2"
   },
   "platforms": {
     "ios": "8.0"
@@ -140,6 +140,10 @@
 
                 ]
               }
+            },
+            {
+              "name": "DLChineseLog",
+              "source_files": "DLKit/Classes/Assist/Statistics/Log/DLChineseLog/**/*"
             },
             {
               "name": "AOPStastic",
